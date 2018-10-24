@@ -24,10 +24,10 @@ function gradientFourSwitch() {
     document.body.className = 'body-four';
 }
 
-gradientOneBtn.addEventListener('click', gradientOneSwitch);
+gradientOneBtn.addEventListener('click', gradientFourSwitch);
 gradientTwoBtn.addEventListener('click', gradientTwoSwitch);
 gradientThreeBtn.addEventListener('click', gradientThreeSwitch);
-gradientFourBtn.addEventListener('click', gradientFourSwitch);
+gradientFourBtn.addEventListener('click', gradientOneSwitch);
 
 //Body color
 // function bodyBackground() {

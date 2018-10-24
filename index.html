@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body id="bodyOne" class="body-one" >
+<body id="bodyOne" class="body-one">
     <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
@@ -28,6 +28,7 @@
     <nav class="navigation" id="nav-bar">
         <div class="container">
             <div class="navigation-container">
+                <button class="logo">&lt;Marcin Świrek /&gt;</button>
                 <ul class="menu">
                     <li class="menu-item"><a class="menu-link tablinks" onclick="openTab(event, 'start')" href="#start">Start</a></li>
                     <li class="menu-item"><a class="menu-link tablinks" onclick="openTab(event, 'about')" href="#about">O
@@ -61,10 +62,10 @@
     </aside>
 
     <aside class="aside-background-colors">
-      <button class="gradientOne aside-gradient-btn" id="gradientOne"></button>
-      <button class="gradientTwo aside-gradient-btn" id="gradientTwo"></button>
-      <button class="gradientThree aside-gradient-btn" id="gradientThree"></button>
-      <button class="gradientFour aside-gradient-btn" id="gradientFour"></button>
+        <button class="gradientOne aside-gradient-btn" id="gradientOne"></button>
+        <button class="gradientTwo aside-gradient-btn" id="gradientTwo"></button>
+        <button class="gradientThree aside-gradient-btn" id="gradientThree"></button>
+        <button class="gradientFour aside-gradient-btn" id="gradientFour"></button>
     </aside>
 
     <header class="start tabcontent" id="start">
@@ -83,10 +84,27 @@
 
     <section class="about tabcontent" id="about">
         <div class="container">
+            <h1 class="about-header header">O mnie</h1>
             <div class="about-container">
-                <h1 class="about-header-one header">Cześć!</h1>
-                <h2 class="about-header-two header">Tutaj bedzie cos o mnie</h2>
-                <p class="about-paragraph">...muszę tylko coś stworzyć :)</p>
+                <div class="about-img-container"><img src="images/user-photo.jpg" alt="" class="about-img"></div>
+                <div class="about-text-container">
+                    <h3 class="about-text-header">Dlaczego programowanie?</h3>
+                    <p class="about-text-paragraph">Olbrzymia <span class="about-span">satysfakcja</span>, jaką daje
+                        możliwość tworzenia 'czegoś' z 'niczego' jest jedną z największych zalet programowania.
+                        Ukończenie projektu, dodanie nowej funkcjonalności, efektu. Każde z wymienionych daje masę
+                        <span class="about-span">radości</span> i <span class="about-span">satysfakcji</span> z
+                        tworzenia. Dodatkowym atutem jest fakt, że <span class="about-span">programista kreuje</span>
+                        coś użytecznego dla Świata, innych ludzi. <span class="about-span">Programowanie</span> ponadto
+                        wymaga
+                        ciągłego <span class="about-span">rozwoju</span> i poszerzania horyzontów o nowe rozwiązania i
+                        technologie. Czy trzeba czegoś więcej, aby <span class="about-span">pracować z pasją</span>?</p>
+                    <h3 class="about-text-header">A co kiedy nie programuję?</h3>
+                    <p class="about-text-paragraph">Pomimo faktu, że <span class="about-span">programowanie</span> i
+                        jego <span class="about-span">ciagła nauka</span> zajmują mi masę czasu, mam świadomość, że nie
+                        samym <span class="about-span">programowaniem</span> żyje człowiek. W wolnych chwilach lubię
+                        pokręcić na rowerze, a w chwilach wolnych od roweru, powspinać się. Nie gardzę również dobrą
+                        książką, tudzież filmem.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -94,25 +112,25 @@
     <section class="skills tabcontent" id="skills">
         <div class="container">
             <div class="skills-container">
-                <h2 class="skills-header header">
+                <h1 class="skills-header header">
                     Technologie, z którymi, i nad którymi wciąż pracuję...
-                </h2>
-                <div class="skills-grid">
-                    <div class="devicons-html5 html5-skills devicons devicons-skills"></div>
-                    <div class="devicons-css3 css3-skills devicons devicons-skills"></div>
-                    <div class="devicons-javascript javascript-skills devicons devicons-skills"></div>
-                    <div class="devicons-jquery jquery-skills devicons devicons-skills"></div>
-                    <div class="devicons-sass sass-skills devicons devicons-skills"></div>
-                    <div class="devicons-bootstrap bootstrap-skills devicons devicons-skills"></div>
-                    <div class="devicons-nodejs nodejs-skills devicons devicons-skills"></div>
-                    <div class="devicons-react react-skills devicons devicons-skills"></div>
-                    <div class="devicons-git git-skills devicons devicons-skills"></div>
-                    <div class="devicons-npm npm-skills devicons devicons-skills"></div>
-                    <div class="devicons-mongodb mongodb-skills devicons devicons-skills"></div>
-                    <div class="devicons-github_badge github-skills devicons devicons-skills"></div>
-                    <div class="devicons-ghost ghost-skills devicons devicons-skills"></div>
-                    <div class="devicons-visualstudio visualstudio-skills devicons devicons-skills"></div>
-                </div>
+                    </h2>
+                    <div class="skills-grid">
+                        <div class="devicons-html5 html5-skills devicons devicons-skills"></div>
+                        <div class="devicons-css3 css3-skills devicons devicons-skills"></div>
+                        <div class="devicons-javascript javascript-skills devicons devicons-skills"></div>
+                        <div class="devicons-jquery jquery-skills devicons devicons-skills"></div>
+                        <div class="devicons-sass sass-skills devicons devicons-skills"></div>
+                        <div class="devicons-bootstrap bootstrap-skills devicons devicons-skills"></div>
+                        <div class="devicons-nodejs nodejs-skills devicons devicons-skills"></div>
+                        <div class="devicons-react react-skills devicons devicons-skills"></div>
+                        <div class="devicons-git git-skills devicons devicons-skills"></div>
+                        <div class="devicons-npm npm-skills devicons devicons-skills"></div>
+                        <div class="devicons-mongodb mongodb-skills devicons devicons-skills"></div>
+                        <div class="devicons-github_badge github-skills devicons devicons-skills"></div>
+                        <div class="devicons-ghost ghost-skills devicons devicons-skills"></div>
+                        <div class="devicons-visualstudio visualstudio-skills devicons devicons-skills"></div>
+                    </div>
             </div>
         </div>
     </section>
@@ -174,16 +192,20 @@
 
     <section class="contact tabcontent" id="contact">
         <div class="container">
-            <address>
-                <h2 class="contact-header-two header">W razie jakichkolwiek pytań lub propozycji,
-                    proszę o kontakt</h2>
-                <a href="mailto:swirek.marcin@gmail.com" class="contact-mail">swirek.marcin@gmail.com</a>
-            </address>
-        </div>
-        </div>
+            <h1 class="contact-header header">Zapraszam do kontaktu</h2>
+                <div class="contact-container">
+                    <a href="mailto:swirek.marcin@gmail.com" class="contact-link"><i class="fas fa-at contact-icon"></i></a>
+                    <a href="https://www.linkedin.com/in/marcin-%C5%9Bwirek-a92a6a156/" class="contact-link"><i class="fab fa-linkedin-in contact-icon"></i></a>
+                    <a href="https://www.facebook.com/marcin.swirek" class="contact-link"><i class="fab fa-facebook-f contact-icon"></i></a>
+                </div>
         </div>
     </section>
 
+    <footer>
+        <div class="container">
+            <p class="footer-paragraph">&copy; Marcin Świrek 2018</p>
+        </div>
+    </footer>
 
 
 

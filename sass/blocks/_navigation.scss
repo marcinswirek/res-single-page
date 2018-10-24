@@ -95,6 +95,17 @@
 
 .navigation-container {
     display: flex;
+    align-items: center;
+}
+
+.logo {
+  font-size: $font-size-m;
+  color: $black;
+  font-weight: 700;
+  font-family: $code;
+  border: 2px solid darkslateblue;
+  border-radius: 20px;
+  background-color: transparent;
 }
 
 .menu {

@@ -12,17 +12,18 @@
 @import url("https://fonts.googleapis.com/css?family=Euphoria+Script|Montserrat|PT+Sans|Quicksand:300,400,700|Merriweather|Roboto+Slab|Titan+One|Source+Code+Pro");
 @import url("https://fonts.googleapis.com/css?family=Euphoria+Script|Montserrat|PT+Sans|Quicksand:300,400,700|Merriweather|Roboto+Slab|Titan+One|Source+Code+Pro");
 @import url("https://fonts.googleapis.com/css?family=Euphoria+Script|Montserrat|PT+Sans|Quicksand:300,400,700|Merriweather|Roboto+Slab|Titan+One|Source+Code+Pro");
+@import url("https://fonts.googleapis.com/css?family=Euphoria+Script|Montserrat|PT+Sans|Quicksand:300,400,700|Merriweather|Roboto+Slab|Titan+One|Source+Code+Pro");
 @import url("https://fonts.googleapis.com/css?family=Euphoria+Script|Montserrat|PT+Sans|Quicksand|Merriweather|Roboto+Slab");
 @import url("https://fonts.googleapis.com/css?family=Euphoria+Script|Montserrat|PT+Sans|Quicksand:300,400,700|Merriweather|Roboto+Slab|Titan+One|Source+Code+Pro");
 * { box-sizing: border-box; margin: 0 auto; }
 
-.body-one { margin: 0 auto; padding: 0; font-family: "Quicksand", "Montserrat", "Merriweather", "Arial", sans-serif, sans-serif; font-weight: 300; background-image: linear-gradient(-45deg, #de496d 0%, #ab49de 100%); background-size: cover; color: white; background-repeat: no-repeat; transition: background-image 2s; }
+.body-one { margin: 0 auto; padding: 0; font-family: "Quicksand", "Montserrat", "Merriweather", "Arial", sans-serif, sans-serif; font-weight: 300; background-image: linear-gradient(135deg, #ab49de 0%, #4954de 100%); background-size: cover; color: white; background-repeat: no-repeat; transition: background-image 2s; }
 
 .body-two { margin: 0 auto; padding: 0; font-family: "Quicksand", "Montserrat", "Merriweather", "Arial", sans-serif, sans-serif; font-weight: 300; background-image: linear-gradient(135deg, #ffae27 0%, #de496d 100%); background-size: cover; color: white; background-repeat: no-repeat; transition: background-image 2s; }
 
 .body-three { margin: 0 auto; padding: 0; font-family: "Quicksand", "Montserrat", "Merriweather", "Arial", sans-serif, sans-serif; font-weight: 300; background-image: linear-gradient(-45deg, #49ddd8 0%, #19e273 100%); background-size: cover; color: white; background-repeat: no-repeat; transition: background-image 2s; }
 
-.body-four { margin: 0 auto; padding: 0; font-family: "Quicksand", "Montserrat", "Merriweather", "Arial", sans-serif, sans-serif; font-weight: 300; background-image: linear-gradient(135deg, #ab49de 0%, #4954de 100%); background-size: cover; color: white; background-repeat: no-repeat; transition: background-image 2s; }
+.body-four { margin: 0 auto; padding: 0; font-family: "Quicksand", "Montserrat", "Merriweather", "Arial", sans-serif, sans-serif; font-weight: 300; background-image: linear-gradient(-45deg, #de496d 0%, #ab49de 100%); background-size: cover; color: white; background-repeat: no-repeat; transition: background-image 2s; }
 
 .header { padding: 10px; text-align: center; font-size: 30px; }
 
@@ -58,7 +59,9 @@
 
 .on-scroll-color { transition: 0.6s all linear; background-color: rgba(0, 0, 0, 0.5); position: fixed; top: 0; width: 100%; z-index: 999; display: fixed; -ms-flex-pack: center; justify-content: center; padding-bottom: 0px; margin-top: 0px; height: 60px; }
 
-.navigation-container { display: -ms-flexbox; display: flex; }
+.navigation-container { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; }
+
+.logo { font-size: 18px; color: black; font-weight: 700; font-family: "Source Code Pro", "Roboto Slab", "Merriweather", "Arial", sans-serif; border: 2px solid darkslateblue; border-radius: 20px; background-color: transparent; }
 
 .menu { display: -ms-flexbox; display: flex; margin-right: 0px; }
 
@@ -68,13 +71,13 @@
 
 .menu-item a:hover { cursor: pointer; color: white; }
 
-header { height: 100vh; }
+header { height: 80vh; }
 
 .header-container { margin-top: 0px; text-align: center; vertical-align: center; padding-top: 16vh; }
 
 .header-btn { width: 180px; height: 60px; border: 1px solid white; border-radius: 5px; background-color: transparent; color: white; font-size: 12px; font-weight: 300; letter-spacing: 1.5px; position: relative; bottom: -5vw; opacity: 0; transition: 1s; }
 
-.header-btn:hover { cursor: pointer; background-image: linear-gradient(135deg, #ab49de 0%, #4954de 100%); }
+.header-btn:hover { cursor: pointer; background-image: linear-gradient(-45deg, #de496d 0%, #ab49de 100%); }
 
 .text-container { font-family: "Quicksand", "Montserrat", "Merriweather", "Arial", sans-serif; }
 
@@ -87,7 +90,7 @@ header { height: 100vh; }
 
 .skills { height: 100vh; }
 
-.skills-header { font-weight: 300; }
+.skills-header { padding-top: 120px; }
 
 .skills-grid { padding: 20px; display: -ms-grid; display: grid; -ms-grid-columns: auto auto auto auto; grid-template-columns: auto auto auto auto; grid-gap: 35px 35px; height: 100%; }
 
@@ -127,9 +130,11 @@ header { height: 100vh; }
 
 .portfolio { height: 100vh; }
 
+.portfolio-container { padding-top: 11vh; }
+
 .portfolio-grid { display: -ms-grid; display: grid; -ms-grid-columns: 23% 23% 23% 23%; grid-template-columns: 23% 23% 23% 23%; gap: 2%; -ms-flex-pack: center; justify-content: center; }
 
-.portfolio-header { font-weight: 300; padding-bottom: 30px; }
+.portfolio-header { padding-bottom: 30px; }
 
 .portfolio-item { height: 50vh; border: 1px solid white; border-radius: 5px; transition: 0.3s all linear; position: relative; }
 
@@ -139,11 +144,11 @@ header { height: 100vh; }
 
 .portfolio-item-btn { height: 40px; width: 6vw; border: 1px solid white; background-color: transparent; border-radius: 5px; color: white; font-size: 30px; }
 
-.portfolio-item-btn:hover { cursor: pointer; background-image: linear-gradient(135deg, #ab49de 0%, #4954de 100%); }
+.portfolio-item-btn:hover { cursor: pointer; background-image: linear-gradient(-45deg, #de496d 0%, #ab49de 100%); }
 
 .portfolio-btn { margin-top: 40px; width: 180px; height: 60px; border: 1px solid white; border-radius: 5px; background-color: transparent; color: white; font-size: 12px; font-weight: 300; letter-spacing: 1.5px; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; padding-left: 25px; }
 
-.portfolio-btn:hover { cursor: pointer; background-image: linear-gradient(135deg, #ab49de 0%, #4954de 100%); }
+.portfolio-btn:hover { cursor: pointer; background-image: linear-gradient(-45deg, #de496d 0%, #ab49de 100%); }
 
 .portfolio-btn-icon { font-size: 30px; }
 
@@ -155,7 +160,33 @@ header { height: 100vh; }
 
 .contact { height: 100vh; }
 
+.contact-container { display: -ms-flexbox; display: flex; margin-top: 100px; }
+
+.contact-header { padding-top: 20vh; }
+
+.contact-link { text-decoration: none; color: black; }
+
+.contact-icon { font-size: 140px; background-color: linear-gradient(-45deg, #49ddd8 0%, #19e273 100%); }
+
 .about { height: 100vh; }
+
+.about-container { display: -ms-flexbox; display: flex; }
+
+.about-header { padding-top: 20vh; }
+
+.about-img { width: 80%; opacity: .9; border-radius: 6px; -webkit-filter: grayscale(90%); filter: grayscale(90%); }
+
+.about-text-container { width: 50%; }
+
+.about-text-header { padding-bottom: 5px; }
+
+.about-text-paragraph { padding-bottom: 25px; letter-spacing: 1px; line-height: 20px; text-align: justify; }
+
+.about-span { font-weight: 700; }
+
+footer { background-color: #2B4151; }
+
+.footer-paragraph { line-height: 75px; }
 
 @media all and (max-width: 850px) { .menu-item { background-color: black; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; width: 100%; line-height: 44px; margin: auto; padding-left: 0; -ms-flex-align: center; align-items: center; }
   .menu-item a { color: white; }

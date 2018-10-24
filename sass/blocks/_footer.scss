@@ -1,0 +1,11 @@
+//Footer section
+@import '../variables/colors';
+@import '../variables/typography';
+
+footer {
+  background-color: #2B4151;
+}
+
+.footer-paragraph {
+  line-height: $font-size-xxl;
+}

@@ -7,6 +7,37 @@
   height: 100vh;
 }
 
-// .header {
-//   margin-top: 30vh;
-// }
+.about-container {
+  display: flex;
+}
+
+.about-header {
+  padding-top: 20vh;
+}
+
+.about-img {
+  width: 80%;
+  opacity: .9;
+  border-radius: 6px;
+  filter: grayscale(90%);
+}
+
+.about-text-container {
+  width: 50%;
+}
+
+.about-text-header {
+  padding-bottom: 5px;
+}
+
+.about-text-paragraph {
+  padding-bottom: 25px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+.about-span {
+  font-weight: 700;
+  //color: $black;
+}

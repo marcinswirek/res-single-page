@@ -1,0 +1,127 @@
+// Skills section
+
+@import '../variables/colors';
+@import '../variables/typography';
+@import '../utils/devicons';
+
+.skills {
+  height: 100vh;
+}
+
+.skills-container {
+  //margin-top: 12vh;
+}
+
+.skills-header {
+  font-weight: 300;
+}
+
+.skills-grid {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 35px 35px;
+    height: 100%;
+}
+
+.devicons-skills {
+    font-size: $font-size-xxl;
+    transition: 0.3s all linear;
+    margin: auto;
+    color: $white;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.html5-skills {
+    &:hover {
+        color: $html5;
+
+    }
+}
+
+.css3-skills {
+    &:hover {
+        color: $css3;
+    }
+}
+
+.responsive-skills {
+    &:hover {
+        color: $rwd;
+    }
+}
+
+.javascript-skills {
+    &:hover {
+        color: $js;
+    }
+}
+
+.jquery-skills {
+    &:hover {
+        color: $jquery;
+    }
+}
+
+.sass-skills {
+    &:hover {
+        color: $sass;
+    }
+}
+
+.bootstrap-skills {
+    &:hover {
+        color: $bootstrap;
+    }
+}
+
+.nodejs-skills {
+    &:hover {
+        color: $nodejs;
+    }
+}
+
+.react-skills {
+    &:hover {
+        color: $react;
+    }
+}
+
+.git-skills {
+    &:hover {
+        color: $git;
+    }
+}
+
+.npm-skills {
+    &:hover {
+        color: $npm;
+    }
+}
+
+.mongodb-skills {
+    &:hover {
+        color: $mongodb;
+    }
+}
+
+.github-skills {
+    &:hover {
+        color: $black;
+    }
+}
+
+.ghost-skills {
+    &:hover {
+        color: $white;
+    }
+}
+
+.visualstudio-skills {
+    &:hover {
+        color: $vsc;
+    }
+}

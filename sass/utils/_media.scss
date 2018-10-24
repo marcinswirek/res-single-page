@@ -1,0 +1,76 @@
+@import "../variables/colors";
+@import "../variables/typography";
+@import "../elements/buttons";
+@import "../elements/typo";
+
+//====================================================================================
+// RWD
+//====================================================================================
+
+//====================================================================================
+
+// Max 850px
+
+@media all and (max-width: 850px) {
+  .menu-item {
+    background-color: $black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    line-height: 44px;
+    margin: auto;
+    padding-left: 0;
+    align-items: center;
+
+    a {
+      color: $white;
+    }
+  }
+
+  .portfolio-grid {
+    grid-template-columns: auto auto;
+  }
+}
+
+//====================================================================================
+//Max 500px
+
+@media all and (max-width: 500px) {
+  .skills-container {
+    grid-template-columns: auto auto;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: auto;
+  }
+}
+
+//====================================================================================
+
+// Max 450px
+
+@media all and (max-width: 450px) {
+  .skills-container {
+    grid-template-columns: auto auto;
+  }
+
+  .portfolio-container {
+    grid-template-columns: auto;
+  }
+}
+
+//=======================================================================
+//Max 320px
+@media all and (max-width: 320px) {
+  .navigation {
+    background-color: rgba(73,84,222,1);
+    color: $white;
+  }
+  // #mySidenav {
+  //   width: 320px;
+  // }
+
+  #typedText {
+    font-size: $font-size-l;
+  }
+}

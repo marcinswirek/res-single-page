@@ -1,0 +1,217 @@
+<!doctype html>
+<html class="no-js" lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <meta name="description" content="Portfolio Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link href='//cdn.jsdelivr.net/npm/devicons@1.8.0/css/devicons.min.css' rel='stylesheet'>
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body id="bodyOne" class="body-one" >
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <nav class="navigation" id="nav-bar">
+        <div class="container">
+            <div class="navigation-container">
+                <ul class="menu">
+                    <li class="menu-item"><a class="menu-link tablinks" onclick="openTab(event, 'start')" href="#start">Start</a></li>
+                    <li class="menu-item"><a class="menu-link tablinks" onclick="openTab(event, 'about')" href="#about">O
+                            mnie</a></li>
+                    <li class="menu-item"><a class="menu-link tablinks" onclick="openTab(event, 'skills')" href="#skills">Technologie</a></li>
+                    <li class="menu-item"><a class="menu-link tablinks" onclick="openTab(event, 'portfolio')" href="#portfolio">Portfolio</a></li>
+                    <li class="menu-item"><a class="menu-link tablinks" onclick="openTab(event, 'contact')" href="#contact">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <aside class="aside-social">
+        <ul class="aside-social-container">
+            <li class="aside-social-item">
+                <a href="https://www.facebook.com/marcin.swirek" class="aside-social-link" target="blank">
+                    <i class="fab fa-facebook-f aside-social-icon"></i>
+                </a>
+            </li>
+            <li class="aside-social-item">
+                <a href="https://www.linkedin.com/in/marcin-%C5%9Bwirek-a92a6a156/" class="aside-social-link" target="blank">
+                    <i class="fab fa-linkedin-in aside-social-icon"></i>
+                </a>
+            </li>
+            <li class="aside-social-item">
+                <a href="https://github.com/swirek-marcin" class="aside-social-link" target="blank">
+                    <i class="fab fa-github  aside-social-icon"></i>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <aside class="aside-background-colors">
+      <button class="gradientOne aside-gradient-btn" id="gradientOne"></button>
+      <button class="gradientTwo aside-gradient-btn" id="gradientTwo"></button>
+      <button class="gradientThree aside-gradient-btn" id="gradientThree"></button>
+      <button class="gradientFour aside-gradient-btn" id="gradientFour"></button>
+    </aside>
+
+    <header class="start tabcontent" id="start">
+        <div class="container header-container">
+            <div class="text-container">
+                <div id="typedText" class="typed-text">
+                    <!-- <p class="start-paragraph">cześć</p>
+                    <p class="start-paragraph">jestem marcin świrek</p>
+                    <p class="start-paragraph">i jestem</p>
+                    <p class="start-paragraph"><span>junior front-end developerem</span></p> -->
+                </div>
+            </div>
+            <button class="header-btn" id="headerBtn">Skontaktuj się ze mną</button>
+        </div>
+    </header>
+
+    <section class="about tabcontent" id="about">
+        <div class="container">
+            <div class="about-container">
+                <h1 class="about-header-one header">Cześć!</h1>
+                <h2 class="about-header-two header">Tutaj bedzie cos o mnie</h2>
+                <p class="about-paragraph">...muszę tylko coś stworzyć :)</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills tabcontent" id="skills">
+        <div class="container">
+            <div class="skills-container">
+                <h2 class="skills-header header">
+                    Technologie, z którymi, i nad którymi wciąż pracuję...
+                </h2>
+                <div class="skills-grid">
+                    <div class="devicons-html5 html5-skills devicons devicons-skills"></div>
+                    <div class="devicons-css3 css3-skills devicons devicons-skills"></div>
+                    <div class="devicons-javascript javascript-skills devicons devicons-skills"></div>
+                    <div class="devicons-jquery jquery-skills devicons devicons-skills"></div>
+                    <div class="devicons-sass sass-skills devicons devicons-skills"></div>
+                    <div class="devicons-bootstrap bootstrap-skills devicons devicons-skills"></div>
+                    <div class="devicons-nodejs nodejs-skills devicons devicons-skills"></div>
+                    <div class="devicons-react react-skills devicons devicons-skills"></div>
+                    <div class="devicons-git git-skills devicons devicons-skills"></div>
+                    <div class="devicons-npm npm-skills devicons devicons-skills"></div>
+                    <div class="devicons-mongodb mongodb-skills devicons devicons-skills"></div>
+                    <div class="devicons-github_badge github-skills devicons devicons-skills"></div>
+                    <div class="devicons-ghost ghost-skills devicons devicons-skills"></div>
+                    <div class="devicons-visualstudio visualstudio-skills devicons devicons-skills"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio tabcontent" id="portfolio">
+        <div class="container">
+            <div class="portfolio-container">
+                <h1 class="portfolio-header header">Projekty</h1>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item portfolio-item-1">
+                        <div class="portfolio-item-img"></div>
+                        <p class="portfolio-item-paragraph">Responsywny Single Page zakodowany z
+                            wykorzystaniem takich technologii, jak HTML, CSS, JavaScript</p>
+                        <div class="portfolio-btn-container">
+                            <a href="http://golden.dev-tricks.pl" target="blank" class="portfolio-item-link"><button
+                                    class="portfolio-item-btn"><i class="far fa-eye"></i></button></a>
+                            <a href="http://golden.dev-tricks.pl" target="blank" class="portfolio-item-link"><button
+                                    class="portfolio-item-btn"><i class="fab fa-github"></i></button></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item portfolio-item-1">
+                        <div class="portfolio-item-img"></div>
+                        <p class="portfolio-item-paragraph">Responsywny Single Page zakodowany z
+                            wykorzystaniem takich technologii, jak HTML, CSS, JavaScript</p>
+                        <div class="portfolio-btn-container">
+                            <a href="http://golden.dev-tricks.pl" target="blank" class="portfolio-item-link"><button
+                                    class="portfolio-item-btn"><i class="far fa-eye"></i></button></a>
+                            <a href="http://golden.dev-tricks.pl" target="blank" class="portfolio-item-link"><button
+                                    class="portfolio-item-btn"><i class="fab fa-github"></i></button></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item portfolio-item-1">
+                        <div class="portfolio-item-img"></div>
+                        <p class="portfolio-item-paragraph">Responsywny Single Page zakodowany z
+                            wykorzystaniem takich technologii, jak HTML, CSS, JavaScript</p>
+                        <div class="portfolio-btn-container">
+                            <a href="http://golden.dev-tricks.pl" target="blank" class="portfolio-item-link"><button
+                                    class="portfolio-item-btn"><i class="far fa-eye"></i></button></a>
+                            <a href="http://golden.dev-tricks.pl" target="blank" class="portfolio-item-link"><button
+                                    class="portfolio-item-btn"><i class="fab fa-github"></i></button></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item portfolio-item-1">
+                        <div class="portfolio-item-img"></div>
+                        <p class="portfolio-item-paragraph">Responsywny Single Page zakodowany z
+                            wykorzystaniem takich technologii, jak HTML, CSS, JavaScript</p>
+                        <div class="portfolio-btn-container">
+                            <a href="http://golden.dev-tricks.pl" target="blank" class="portfolio-item-link"><button
+                                    class="portfolio-item-btn"><i class="far fa-eye"></i></button></a>
+                            <a href="http://golden.dev-tricks.pl" target="blank" class="portfolio-item-link"><button
+                                    class="portfolio-item-btn"><i class="fab fa-github"></i></button></a>
+                        </div>
+                    </div>
+                </div>
+                <button class="portfolio-btn">Więcej na<i class="fab fa-github portfolio-btn-icon"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact tabcontent" id="contact">
+        <div class="container">
+            <address>
+                <h2 class="contact-header-two header">W razie jakichkolwiek pytań lub propozycji,
+                    proszę o kontakt</h2>
+                <a href="mailto:swirek.marcin@gmail.com" class="contact-mail">swirek.marcin@gmail.com</a>
+            </address>
+        </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')
+
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/typewriter.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview')
+
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>

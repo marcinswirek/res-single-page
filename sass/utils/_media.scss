@@ -9,22 +9,85 @@
 
 //====================================================================================
 
-// Max 850px
+// Max 950px
 
-@media all and (max-width: 850px) {
-  .menu-item {
-    background-color: $black;
+@media all and (max-width: 950px) {
+  //Hamburger menu
+
+  // .aside-social {
+  //   display: none;
+  // }
+
+  .navigation-container {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navigation {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    margin: auto;
+  }
+
+  .navigation-container {
+    display: flex;
+    flex-direction: column;
+    //width: 100%;
+  }
+
+  .logo {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .menu-button-label {
+    display: block;
+    margin: 0 auto;
+    padding: 3px 15px;
+    color: $white;
+    margin-right: 5px;
+    margin-top: -40px;
+  }
+
+  .menu-button-input:not(:checked) ~ ul {
+    display: none;
+  }
+
+  .menu-button-input:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-item {
+    background-color: rgba($black, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
     line-height: 44px;
     margin: auto;
-    padding-left: 0;
+    // padding-left: -40px;
     align-items: center;
 
     a {
+      padding-left: 0;
       color: $white;
     }
+  }
+
+  // .menu-link {
+  //   padding-left: 0;
+  // }
+
+  .menu {
+    display: none;
+    padding-left: 0;
+  }
+
+  #typed-text {
+    font-size: $font-size-s;
   }
 
   .portfolio-grid {

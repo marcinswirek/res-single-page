@@ -4,11 +4,26 @@
 @import '../variables/typography';
 @import '../elements/buttons';
 
+//Hamburger menu
+.menu-button-input[type="checkbox"] + label {
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.menu-button-input,
+.menu-button-label {
+  display: none;
+  color: $black;
+}
+
+//Section ends
+
 .aside-social-container {
     position: fixed;
     left: -25px;
     top: 36vh;
     list-style-type: none;
+    z-index: 998;
 }
 
 .aside-social-link {
@@ -19,6 +34,7 @@
 .aside-social-item {
     padding: 10px 20px;
     font-size: $font-size-l;
+    z-index: 998;
 
     i {
         transition: .4s;
@@ -35,6 +51,7 @@
     position: fixed;
     right: 0px;
     top: 35vh;
+    z-index: 998;
 }
 
 .gradientOne {

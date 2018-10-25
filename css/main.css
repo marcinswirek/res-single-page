@@ -29,17 +29,21 @@
 
 .container { width: 1200px; max-width: 100%; }
 
-.aside-social-container { position: fixed; left: -25px; top: 36vh; list-style-type: none; }
+.menu-button-input[type="checkbox"] + label { font-size: 35px; cursor: pointer; }
+
+.menu-button-input, .menu-button-label { display: none; color: black; }
+
+.aside-social-container { position: fixed; left: -25px; top: 36vh; list-style-type: none; z-index: 998; }
 
 .aside-social-link { color: black; }
 
-.aside-social-item { padding: 10px 20px; font-size: 30px; }
+.aside-social-item { padding: 10px 20px; font-size: 30px; z-index: 998; }
 
 .aside-social-item i { transition: .4s; }
 
 .aside-social-item i:hover { color: white; }
 
-.aside-background-colors { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; position: fixed; right: 0px; top: 35vh; }
+.aside-background-colors { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; position: fixed; right: 0px; top: 35vh; z-index: 998; }
 
 .gradientOne { background-color: rgba(222, 73, 109, 0.7); }
 
@@ -182,8 +186,17 @@ footer { background-color: #2B4151; }
 
 .footer-paragraph { line-height: 50px; font-size: 12px; }
 
-@media all and (max-width: 850px) { .menu-item { background-color: black; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; width: 100%; line-height: 44px; margin: auto; padding-left: 0; -ms-flex-align: center; align-items: center; }
-  .menu-item a { color: white; }
+@media all and (max-width: 950px) { .navigation-container { padding-top: 5px; display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: justify; justify-content: space-between; }
+  .navigation { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; margin: auto; }
+  .navigation-container { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; }
+  .logo { margin-top: 10px; margin-left: 10px; }
+  .menu-button-label { display: block; margin: 0 auto; padding: 3px 15px; color: white; margin-right: 5px; margin-top: -40px; }
+  .menu-button-input:not(:checked) ~ ul { display: none; }
+  .menu-button-input:checked ~ ul { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; }
+  .menu-item { background-color: rgba(0, 0, 0, 0.95); display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; width: 100vw; line-height: 44px; margin: auto; -ms-flex-align: center; align-items: center; }
+  .menu-item a { padding-left: 0; color: white; }
+  .menu { display: none; padding-left: 0; }
+  #typed-text { font-size: 16px; }
   .portfolio-grid { -ms-grid-columns: auto auto; grid-template-columns: auto auto; } }
 
 @media all and (max-width: 500px) { .skills-container { -ms-grid-columns: auto auto; grid-template-columns: auto auto; }

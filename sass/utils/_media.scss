@@ -215,7 +215,7 @@
     }
 
     .portfolio-item-paragraph {
-        margin-top: 90%;
+        margin-top: 40%;
     }
 
     .portfolio-item {
@@ -262,6 +262,10 @@
 
     .portfolio-container {
         grid-template-columns: auto;
+    }
+
+    .portfolio-item-paragraph {
+      margin-top: 60%;
     }
 
     .contact-icon {

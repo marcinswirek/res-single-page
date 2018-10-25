@@ -12,13 +12,18 @@
   margin-top: 100px;
 }
 
-.contact-header {
-  padding-top: 20vh;
-}
+// .contact-header {
+//   padding-top: 20vh;
+// }
 
 .contact-link {
   text-decoration: none;
-  color: $black;
+  color: rgba($black, .6);
+  transition: .5s;
+
+  &:hover {
+    color: rgba($black, 1.0);
+  }
 }
 
 .contact-icon {

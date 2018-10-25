@@ -29,6 +29,12 @@ gradientTwoBtn.addEventListener('click', gradientTwoSwitch);
 gradientThreeBtn.addEventListener('click', gradientThreeSwitch);
 gradientFourBtn.addEventListener('click', gradientOneSwitch);
 
+//Mobile tap event
+gradientOneBtn.addEventListener('touch', gradientFourSwitch);
+gradientTwoBtn.addEventListener('touch', gradientTwoSwitch);
+gradientThreeBtn.addEventListener('touch', gradientThreeSwitch);
+gradientFourBtn.addEventListener('touch', gradientOneSwitch);
+
 //Body color
 // function bodyBackground() {
 //     if (document.body.scrollTop > 800) {

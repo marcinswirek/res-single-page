@@ -43,7 +43,7 @@
 
 .aside-social-item i:hover { color: white; }
 
-.aside-background-colors { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; position: fixed; right: 0px; top: 35vh; z-index: 998; }
+.aside-background-colors { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; position: fixed; right: 0; top: 35vh; z-index: 900; }
 
 .gradientOne { background-color: rgba(222, 73, 109, 0.7); }
 
@@ -69,7 +69,7 @@
 
 .menu { display: -ms-flexbox; display: flex; margin-right: 0px; }
 
-.menu-item { list-style-type: none; }
+.menu-item { list-style-type: none; z-index: 999; }
 
 .menu-item a { padding-left: 30px; text-decoration: none; color: black; font-size: 12px; text-transform: uppercase; font-weight: 700; line-height: 60px; letter-spacing: 1.5px; transition: .4s; }
 
@@ -142,7 +142,7 @@ header { height: 80vh; }
 
 .portfolio-btn-container { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; margin-top: 30px; }
 
-.portfolio-item-btn { height: 40px; width: 6vw; border: 1px solid white; background-color: transparent; border-radius: 5px; color: white; font-size: 30px; }
+.portfolio-item-btn { height: 40px; width: 140px; border: 1px solid white; background-color: transparent; border-radius: 5px; color: white; font-size: 30px; }
 
 .portfolio-item-btn:hover { cursor: pointer; background-image: linear-gradient(-45deg, #de496d 0%, #ab49de 100%); }
 
@@ -186,25 +186,62 @@ footer { background-color: #2B4151; }
 
 .footer-paragraph { line-height: 50px; font-size: 12px; }
 
-@media all and (max-width: 950px) { .navigation-container { padding-top: 5px; display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: justify; justify-content: space-between; }
+@media all and (max-width: 1200px) { .portfolio, .skills, .contact { height: 100%; }
+  .portfolio-item { height: 100%; }
+  .portfolio-grid { -ms-grid-columns: 35% 35%; grid-template-columns: 35% 35%; grid-gap: 20px; }
+  .portfolio-item-paragraph { margin-top: 200px; }
+  .portfolio-item-btn { margin-bottom: 10px; }
+  .about-img { float: right; }
+  .about-text-container { width: 40vw; }
+  .header { padding-top: 12vh; padding-bottom: 30px; }
+  .about-header { padding-top: 20vh; }
+  .contact-container { margin: 80px auto; } }
+
+@media all and (max-width: 1050px) { .navigation-container { padding-top: 5px; display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: justify; justify-content: space-between; display: flex; -ms-flex-direction: column; flex-direction: column; }
   .navigation { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; margin: auto; }
-  .navigation-container { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; }
   .logo { margin-top: 10px; margin-left: 10px; }
-  .menu-button-label { display: block; margin: 0 auto; padding: 3px 15px; color: white; margin-right: 5px; margin-top: -40px; }
+  .menu-button-label { display: block; margin: 0 auto; padding: 3px 10px; color: white; margin-right: 25px; margin-top: -40px; }
   .menu-button-input:not(:checked) ~ ul { display: none; }
   .menu-button-input:checked ~ ul { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; }
   .menu-item { background-color: rgba(0, 0, 0, 0.95); display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; width: 100vw; line-height: 44px; margin: auto; -ms-flex-align: center; align-items: center; }
   .menu-item a { padding-left: 0; color: white; }
   .menu { display: none; padding-left: 0; }
   #typed-text { font-size: 16px; }
-  .portfolio-grid { -ms-grid-columns: auto auto; grid-template-columns: auto auto; } }
+  .about-header { padding-top: 20vh; }
+  .about { height: 100%; }
+  .about-container { -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; }
+  .about-img-container { text-align: center; }
+  .about-img { float: none; }
+  .about-text-container { text-align: center; margin-top: 30px; width: 75vw; }
+  .skills { height: 100%; }
+  .contact { height: 100%; }
+  .contact-container { margin-bottom: 150px; }
+  .footer-paragraph { padding-left: 30px; } }
 
-@media all and (max-width: 500px) { .skills-container { -ms-grid-columns: auto auto; grid-template-columns: auto auto; }
-  .portfolio-grid { -ms-grid-columns: auto; grid-template-columns: auto; } }
+@media all and (max-width: 800px) { .portfolio-grid { -ms-grid-columns: 60vw; grid-template-columns: 60vw; }
+  .portfolio-item-paragraph { margin-top: 200px; }
+  .portfolio-item-btn { margin-bottom: 10px; } }
 
-@media all and (max-width: 450px) { .skills-container { -ms-grid-columns: auto auto; grid-template-columns: auto auto; }
-  .portfolio-container { -ms-grid-columns: auto; grid-template-columns: auto; } }
+@media all and (max-width: 550px) { .skills-grid { -ms-grid-columns: auto auto; grid-template-columns: auto auto; }
+  .portfolio-grid { -ms-grid-columns: 75vw; grid-template-columns: 75vw; }
+  .portfolio-item-paragraph { margin-top: 90%; }
+  .portfolio-item { height: 100%; }
+  .portfolio-item-btn { margin-bottom: 5px; width: 120px; }
+  .header { padding-left: 15px; padding-right: 15px; }
+  .aside-background-colors { display: none; }
+  .aside-social-container { left: -50px; } }
 
-@media all and (max-width: 320px) { .navigation { background-color: #4954de; color: white; }
-  #typedText { font-size: 30px; } }
+@media all and (max-width: 450px) { #typedText { margin-top: 0px; font-size: 30px; }
+  .skills-container { -ms-grid-columns: auto auto; grid-template-columns: auto auto; }
+  .portfolio-container { -ms-grid-columns: auto; grid-template-columns: auto; }
+  .contact-icon { font-size: 75px; } }
+
+@media all and (max-width: 320px) { section { height: 100%; }
+  #typedText { font-size: 30px; }
+  .aside-social { display: none; }
+  .skills-grid { -ms-grid-columns: auto auto; grid-template-columns: auto auto; }
+  .skills-paragraph { font-size: 16px; }
+  .devicons-skills { font-size: 30px; }
+  .portfolio-item-btn { width: 100px; }
+  .portfolio-item-paragraph { margin-top: 190px; } }
 /*# sourceMappingURL=main.css.map */

@@ -49,9 +49,9 @@
     display: flex;
     flex-direction: column;
     position: fixed;
-    right: 0px;
+    right: 0;
     top: 35vh;
-    z-index: 998;
+    z-index: 900;
 }
 
 .gradientOne {
@@ -132,6 +132,7 @@
 
 .menu-item {
     list-style-type: none;
+    z-index: 999;
 
     a {
         padding-left: 30px;

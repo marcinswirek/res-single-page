@@ -29,47 +29,11 @@ gradientTwoBtn.addEventListener('click', gradientTwoSwitch);
 gradientThreeBtn.addEventListener('click', gradientThreeSwitch);
 gradientFourBtn.addEventListener('click', gradientOneSwitch);
 
-//Mobile tap event
-gradientOneBtn.addEventListener('touch', gradientFourSwitch);
-gradientTwoBtn.addEventListener('touch', gradientTwoSwitch);
-gradientThreeBtn.addEventListener('touch', gradientThreeSwitch);
-gradientFourBtn.addEventListener('touch', gradientOneSwitch);
-
-//Body color
-// function bodyBackground() {
-//     if (document.body.scrollTop > 800) {
-//         bodyOne.className = 'body-one';
-//     } else {
-//         bodyOne.className = 'body-main';
-//     }
-// }
-
-// window.onscroll = function() {
-//     bodyBackground();
-// };
-
-// $(function() {
-//     $(window).scroll(function() {
-//         if ($(this).scrollTop() > 550) {
-//             $('body').addClass('body-one');
-//         }
-//         if ($(this).scrollTop() < 550) {
-//             $('body').removeClass('body-one');
-//         }
-//         if ($(this).scrollTop() > 1100) {
-//             $('body').addClass('body-two');
-//         }
-//         if ($(this).scrollTop() < 1100) {
-//             $('body').removeClass('body-two');
-//         }
-//         if ($(this).scrollTop() > 1650) {
-//             $('body').addClass('body-three');
-//         }
-//         if ($(this).scrollTop() < 1650) {
-//             $('body').removeClass('body-three');
-//         }
-//     });
-// });
+//Mobile tap event to do
+//gradientOneBtn.addEventListener('touch', gradientFourSwitch);
+//gradientTwoBtn.addEventListener('touch', gradientTwoSwitch);
+//gradientThreeBtn.addEventListener('touch', gradientThreeSwitch);
+//gradientFourBtn.addEventListener('touch', gradientOneSwitch);
 
 //Navigation scroll visualisation
 function menuScroll() {
@@ -93,24 +57,5 @@ function showBtn() {
         headerBtn.style.opacity = '1';
     }, 11000);
 }
-
-//Tab
-
-// function openTab(event, tabName) {
-
-//   let i, tabcontent, tablinks;
-//   tabcontent = document.getElementsByClassName("tabcontent");
-//   for (i = 0; i < tabcontent.length; i++) {
-//     tabcontent[i].style.display = "none";
-//   }
-//   tablinks = document.getElementsByClassName("tablinks");
-//   for (i = 0; i < tablinks.length; i++) {
-//     tablinks[i].className = tablinks[i].className.replace(" active", "");
-//   }
-//   document.getElementById(tabName).style.display = "block";
-//   event.currentTarget.className += " active";
-// };
-
-// openTab();
 
 document.addEventListener('DOMContentLoaded', showBtn);

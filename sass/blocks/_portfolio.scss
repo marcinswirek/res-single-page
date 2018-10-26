@@ -23,7 +23,7 @@
 // }
 
 .portfolio-item {
-    height: 50vh;
+    //height: 50vh;
     border: 1px solid $white;
     border-radius: 5px;
     transition: 0.3s all linear;
@@ -37,7 +37,7 @@
 .portfolio-btn-container {
   display: flex;
   align-items: center;
-  margin-top: 30px;
+  margin: 20px auto;
 }
 
 .portfolio-item-btn {
@@ -89,7 +89,7 @@
 .portfolio-item-img {
     height: 40%;
     width: 90%;
-    background-image: url('../images/golden.jpg');
+    background-image: url('../images/puzzle.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -97,6 +97,22 @@
     position: absolute;
     top: 3%;
     left: 5%;
+}
+
+.portfolio-item-img-1 {
+  background-image: url('../images/golden.jpg');
+}
+
+.portfolio-item-img-2 {
+  background-image: url('../images/puzzle.jpg');
+}
+
+.portfolio-item-img-3 {
+  background-image: url('../images/plans.jpg');
+}
+
+.portfolio-item-img-4 {
+  background-image: url('../images/pies.jpg');
 }
 
 .portfolio-item-paragraph {

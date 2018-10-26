@@ -1,7 +1,6 @@
 @import "../variables/colors";
 @import "../variables/typography";
 @import "../elements/buttons";
-@import "../elements/typo";
 
 //====================================================================================
 // RWD
@@ -17,10 +16,6 @@
         height: 100%;
     }
 
-    .portfolio-item {
-      //height: 100%;
-    }
-
     .portfolio-grid {
         grid-template-columns: 35% 35%;
         grid-gap: 20px;
@@ -29,10 +24,6 @@
     .portfolio-item-paragraph {
         margin-top: 200px;
     }
-
-    // .portfolio-item-btn {
-    //   margin-bottom: 10px;
-    // }
 
     .about-img {
         float: right;
@@ -60,15 +51,6 @@
 
 @media all and (max-width: 1050px) {
     //Hamburger menu
-
-    // .aside-social {
-    //   display: none;
-    // }
-
-    // .container {
-    //   margin-left: 15px;
-    //   margin-right: 15px;
-    // }
 
     .navigation-container {
         padding-top: 5px;
@@ -116,7 +98,6 @@
         width: 100vw;
         line-height: 44px;
         margin: auto;
-        // padding-left: -40px;
         align-items: center;
 
         a {
@@ -125,10 +106,6 @@
         }
     }
 
-    // .menu-link {
-    //   padding-left: 0;
-    // }
-
     .menu {
         display: none;
         padding-left: 0;
@@ -136,10 +113,6 @@
 
     #typed-text {
         font-size: $font-size-s;
-    }
-
-    .header {
-        //padding-top: 9vh;
     }
 
     .about-header {
@@ -169,14 +142,6 @@
         width: 75vw;
     }
 
-    .skills {
-        height: 100%;
-    }
-
-    .contact {
-        height: 100%;
-    }
-
     .contact-container {
         margin-bottom: 150px;
     }
@@ -196,10 +161,6 @@
     .portfolio-item-paragraph {
       margin-top: 200px;
     }
-
-    // .portfolio-item-btn {
-    //   margin-bottom: 10px;
-    // }
 }
 
 //====================================================================================
@@ -217,15 +178,6 @@
     .portfolio-item-paragraph {
         margin-top: 40%;
     }
-
-    // .portfolio-item {
-    //     height: 100%;
-    // }
-
-    // .portfolio-item-btn {
-    //   margin-bottom: 5px;
-    //   width: 120px;
-    // }
 
     .header {
         padding-left: 15px;
@@ -246,10 +198,6 @@
 // Max 450px
 
 @media all and (max-width: 450px) {
-
-    // header {
-    //   height: 100%;
-    // }
     
     #typedText {
       margin-top: 0px;
@@ -276,9 +224,6 @@
 //=======================================================================
 //Max 320px
 @media all and (max-width: 320px) {
-    section {
-        height: 100%;
-    }
 
     #typedText {
         font-size: $font-size-l;
@@ -290,7 +235,6 @@
 
     .skills-grid {
         grid-template-columns: auto auto;
-        //grid-gap: 15px;
     }
 
     .skills-paragraph {

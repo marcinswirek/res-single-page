@@ -2,53 +2,29 @@
 
 @import '../variables/colors';
 @import '../variables/typography';
+@import '../elements/buttons';
 
 header {
     height: 80vh;
 }
 
-// span {
-//   font-weight: 700;
-// }
-
 .header-container {
-  margin-top: 0px;
-  text-align: center;
-  vertical-align: center;
-  padding-top: 16vh;
+    margin-top: 0px;
+    text-align: center;
+    vertical-align: center;
+    padding-top: 16vh;
 }
 
 .header-btn {
-    width: 180px;
-    height: 60px;
-    border: 1px solid $white;
-    border-radius: 5px;
-    background-color: transparent;
-    color: $white;
-    font-size: $font-size-xs;
-    font-weight: 300;
-    letter-spacing: 1.5px;
-    position: relative;
-    bottom: -5vw;
-    opacity: 0;
-    transition: 1s;
-
-    &:hover {
-        cursor: pointer;
-        background-image: $gradient-4;
-    }
+    @include btn-main;
 }
 
 .text-container {
     font-family: $quicksand;
-    // text-align: center;
-    // vertical-align: center;
 }
 
 #typedText {
     font-size: $font-size-xl;
     font-weight: 300;
     margin-top: 30px;
-    //text-align: center;
-    //padding-top: 2vh;
 }

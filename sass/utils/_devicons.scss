@@ -22,127 +22,11 @@
 	font-variant: normal;
 	text-transform: none;
   line-height: 1;
-  // font-size: $font-size-xxxl;
-  // transition: 0.3s all linear;
-  // margin: auto;
-  // border-radius: 5px;
-  // color: $lightgrey;
 
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
-  // &:hover {
-  //   transform: scale(1.1);
-  //   background-color: rgba($black, .6);
-  // }
 }
-
-// .devicons-html5 {
-//   &:hover{
-//   color: $html5;
-//   box-shadow: 0 0 20px $html5;
-//   }
-// }
-
-// .devicons-css3 {
-//   &:hover {
-//     color: $css3;
-//     box-shadow: 0 0 20px $css3;
-//   }
-// }
-
-// .devicons-responsive {
-//   &:hover {
-//     color: $rwd;
-//     box-shadow: 0 0 20px $rwd;
-//   }
-// }
-
-// .devicons-javascript {
-//   &:hover {
-//     color: $js;
-//     box-shadow: 0 0 20px $js;
-//   }
-// }
-
-// .devicons-jquery {
-//   &:hover {
-//     color: $jquery;
-//     box-shadow: 0 0 20px $jquery;
-//   }
-// }
-
-// .devicons-sass {
-//   &:hover {
-//     color: $sass;
-//     box-shadow: 0 0 20px $sass;
-//   }
-// }
-
-// .devicons-bootstrap {
-//   &:hover {
-//     color: $bootstrap;
-//     box-shadow: 0 0 20px $bootstrap;
-//   }
-// }
-
-// .devicons-nodejs {
-//   &:hover {
-//     color: $nodejs;
-//     box-shadow: 0 0 20px $nodejs;
-//   }
-// }
-
-// .devicons-react {
-//   &:hover {
-//     color: $react;
-//     box-shadow: 0 0 20px $react;
-//   }
-// }
-
-// .devicons-git {
-//   &:hover {
-//     color: $git;
-//     box-shadow: 0 0 20px $git;
-//   }
-// }
-
-// .devicons-npm {
-//   &:hover {
-//     color: $npm;
-//     box-shadow: 0 0 20px $npm;
-//   }
-// }
-
-// .devicons-mongodb {
-//   &:hover {
-//     color: $mongodb;
-//     box-shadow: 0 0 20px $mongodb;
-//   }
-// }
-
-// .devicons-github_badge {
-//   &:hover {
-//     color: $white;
-//     box-shadow: 0 0 20px $black;
-//     background-color: rgba($black, .6);
-//   }
-// }
-
-// .devicons-ghost {
-//   &:hover {
-//     color: $white;
-//     box-shadow: 0 0 20px $white;
-//   }
-// }
-
-// .devicons-visualstudio {
-//   &:hover {
-//     color: $vsc;
-//     box-shadow: 0 0 20px $vsc;
-//   }
-// }
 
 $devicons:	(git "\e602"),
 			(git_compare "\e628"),
@@ -340,13 +224,6 @@ $devicons:	(git "\e602"),
 @each $devicon in $devicons {
 	  $iconClass: nth($devicon, 1);
 	  $iconClassBefore: nth($devicon, 2);
-	  // .devicons-#{$iconClass}{
-	  // 	&:before{
-	  // 		content: "#{$iconClassBefore}";	
-	  // 	}
-	  	
-	  
-	  // }
 }	
 
 

@@ -29,6 +29,8 @@
   display: flex;
   align-items: center;
   margin: 20px auto;
+  // position: absolute;
+  // bottom: 10px;
 }
 
 .portfolio-item-btn {
@@ -39,10 +41,11 @@
   border-radius: 5px;
   color: $white;
   font-size: $font-size-l;
+  transition: .3s all linear;
 
   &:hover {
     cursor: pointer;
-    background-image: $gradient-4;
+    transform: scale(1.05);
   }
 }
 
@@ -60,10 +63,11 @@
     display: flex;
     align-items: center;
     padding-left: 25px;
+    transition: .3s all linear;
 
     &:hover {
         cursor: pointer;
-        background-image: $gradient-4;
+        transform: scale(1.05);
     }
 }
 

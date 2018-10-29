@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Portfolio</title>
+    <title>Marcin Świrek Portfolio</title>
     <meta name="description" content="Portfolio Website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body id="bodyOne" class="body-one">
+<body>
     <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
@@ -28,7 +28,7 @@
     <nav class="navigation" id="nav-bar">
         <div class="container">
             <div class="navigation-container">
-                <button class="logo">&lt;Marcin Świrek /&gt;</button>
+                <button class="logo" id="navLogo">&lt;Marcin Świrek /&gt;</button>
                 <input class="menu-button-input" type="checkbox" id="menu-button">
                 <label class="menu-button-label" for="menu-button">☰</label>
                 <ul class="menu">
@@ -63,12 +63,12 @@
         </ul>
     </aside>
 
-    <aside class="aside-background-colors">
+    <!-- <aside class="aside-background-colors">
         <button class="gradientOne aside-gradient-btn" id="gradientOne"></button>
         <button class="gradientTwo aside-gradient-btn" id="gradientTwo"></button>
         <button class="gradientThree aside-gradient-btn" id="gradientThree"></button>
         <button class="gradientFour aside-gradient-btn" id="gradientFour"></button>
-    </aside>
+    </aside> -->
 
     <header class="start tabcontent" id="start">
         <div class="container header-container">
@@ -114,65 +114,65 @@
             <div class="skills-container">
                 <h1 class="skills-header header">
                     Technologie, z którymi, i nad którymi wciąż pracuję...
-                    </h2>
-                    <div class="skills-grid">
-                        <div class="skills-item">
-                            <div class="devicons-html5 html5-skills devicons devicons-skills"></div>
-                            <p class="skills-paragraph">HTML</p>
-                        </div>
-                        <div class="skills-item">
-                            <div class="devicons-css3 css3-skills devicons devicons-skills"></div>
-                            <p class="skills-paragraph">CSS</p>
-                        </div>
-                        <div class="skills-item">
-                            <div class="devicons-javascript javascript-skills devicons devicons-skills"></div>
-                            <p class="skills-paragraph">JavaScript</p>
-                        </div>
-                        <div class="skills-item">
-                            <div class="devicons-jquery jquery-skills devicons devicons-skills"></div>
-                            <p class="skills-paragraph">jQuery</p>
-                        </div>
-                        <div class="skills-item">
-                            <div class="devicons-sass sass-skills devicons devicons-skills"></div>
-                            <p class="skills-paragraph">SASS</p>
-                        </div>
-                        <div class="skills-item">
-                            <div class="devicons-bootstrap bootstrap-skills devicons devicons-skills"></div>
-                            <p class="skills-paragraph">Bootstrap</p>
-                        </div>
-                        <div class="skills-item">
-                            <div class="devicons-nodejs nodejs-skills devicons devicons-skills"></div>
-                            <p class="skills-paragraph">Node.js</p>
-                        </div>
-                        <div class="skills-item">
-                            <div class="devicons-react react-skills devicons devicons-skills"></div>
-                            <p class="skills-paragraph">React.js</p>
-                        </div>
-                        <div class="skills-item">
-                            <div class="devicons-git git-skills devicons devicons-skills"></div>
-                            <p class="skills-paragraph">Git</p>
-                        </div>
-                        <div class="skills-item">
-                            <div class="devicons-npm npm-skills devicons devicons-skills"></div>
-                            <p class="skills-paragraph">npm</p>
-                        </div>
-                        <div class="skills-item">
-                            <div class="devicons-mongodb mongodb-skills devicons devicons-skills"></div>
-                            <p class="skills-paragraph">Mongo.db</p>
-                        </div>
-                        <div class="skills-item">
-                            <div class="devicons-github_badge github-skills devicons devicons-skills"></div>
-                            <p class="skills-paragraph">Github</p>
-                        </div>
-                        <!-- <div class="skills-item">
+                </h1>
+                <div class="skills-grid">
+                    <div class="skills-item">
+                        <div class="devicons-html5 html5-skills devicons devicons-skills"></div>
+                        <p class="skills-paragraph">HTML</p>
+                    </div>
+                    <div class="skills-item">
+                        <div class="devicons-css3 css3-skills devicons devicons-skills"></div>
+                        <p class="skills-paragraph">CSS</p>
+                    </div>
+                    <div class="skills-item">
+                        <div class="devicons-javascript javascript-skills devicons devicons-skills"></div>
+                        <p class="skills-paragraph">JavaScript</p>
+                    </div>
+                    <div class="skills-item">
+                        <div class="devicons-jquery jquery-skills devicons devicons-skills"></div>
+                        <p class="skills-paragraph">jQuery</p>
+                    </div>
+                    <div class="skills-item">
+                        <div class="devicons-sass sass-skills devicons devicons-skills"></div>
+                        <p class="skills-paragraph">SASS</p>
+                    </div>
+                    <div class="skills-item">
+                        <div class="devicons-bootstrap bootstrap-skills devicons devicons-skills"></div>
+                        <p class="skills-paragraph">Bootstrap</p>
+                    </div>
+                    <div class="skills-item">
+                        <div class="devicons-nodejs nodejs-skills devicons devicons-skills"></div>
+                        <p class="skills-paragraph">Node.js</p>
+                    </div>
+                    <div class="skills-item">
+                        <div class="devicons-react react-skills devicons devicons-skills"></div>
+                        <p class="skills-paragraph">React.js</p>
+                    </div>
+                    <div class="skills-item">
+                        <div class="devicons-git git-skills devicons devicons-skills"></div>
+                        <p class="skills-paragraph">Git</p>
+                    </div>
+                    <div class="skills-item">
+                        <div class="devicons-npm npm-skills devicons devicons-skills"></div>
+                        <p class="skills-paragraph">npm</p>
+                    </div>
+                    <div class="skills-item">
+                        <div class="devicons-mongodb mongodb-skills devicons devicons-skills"></div>
+                        <p class="skills-paragraph">Mongo.db</p>
+                    </div>
+                    <div class="skills-item">
+                        <div class="devicons-github_badge github-skills devicons devicons-skills"></div>
+                        <p class="skills-paragraph">Github</p>
+                    </div>
+                    <!-- <div class="skills-item">
                             <div class="devicons-ghost ghost-skills devicons devicons-skills"></div>
                             <p class="skills-paragraph">Ghost</p>
                         </div> -->
-                        <!-- <div class="skills-item">
+                    <!-- <div class="skills-item">
                             <div class="devicons-visualstudio visualstudio-skills devicons devicons-skills"></div>
                             <p class="skills-paragraph">Visual Studio Code</p>
                         </div> -->
-                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -236,12 +236,12 @@
 
     <section class="contact tabcontent" id="contact">
         <div class="container">
-            <h1 class="contact-header header">Zapraszam do kontaktu</h2>
-                <div class="contact-container">
-                    <a href="mailto:swirek.marcin@gmail.com" class="contact-link"><i class="fas fa-at contact-icon"></i></a>
-                    <a href="https://www.linkedin.com/in/marcin-%C5%9Bwirek-a92a6a156/" class="contact-link"><i class="fab fa-linkedin-in contact-icon"></i></a>
-                    <a href="https://www.facebook.com/marcin.swirek" class="contact-link"><i class="fab fa-facebook-f contact-icon"></i></a>
-                </div>
+            <h1 class="contact-header header">Zapraszam do kontaktu</h1>
+            <div class="contact-container">
+                <a href="mailto:swirek.marcin@gmail.com" class="contact-link"><i class="fas fa-at contact-icon"></i></a>
+                <a href="https://www.linkedin.com/in/marcin-%C5%9Bwirek-a92a6a156/" class="contact-link"><i class="fab fa-linkedin-in contact-icon"></i></a>
+                <a href="https://www.facebook.com/marcin.swirek" class="contact-link"><i class="fab fa-facebook-f contact-icon"></i></a>
+            </div>
         </div>
     </section>
 

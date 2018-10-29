@@ -5,15 +5,15 @@
 @import '../elements/buttons';
 
 //Hamburger menu
-.menu-button-input[type="checkbox"] + label {
-  font-size: 35px;
-  cursor: pointer;
+.menu-button-input[type="checkbox"]+label {
+    font-size: 35px;
+    cursor: pointer;
 }
 
 .menu-button-input,
 .menu-button-label {
-  display: none;
-  color: $black;
+    display: none;
+    color: $black;
 }
 
 //Section ends
@@ -27,7 +27,7 @@
 }
 
 .aside-social-link {
-    color: $black;
+    color: $white;
 }
 
 .aside-social-item {
@@ -39,51 +39,51 @@
         transition: .4s;
 
         &:hover {
-            color: $white;
+            color: $black;
         }
     }
 }
 
-.aside-background-colors {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    right: 0;
-    top: 35vh;
-    z-index: 900;
-}
+// .aside-background-colors {
+//     display: flex;
+//     flex-direction: column;
+//     position: fixed;
+//     right: 0;
+//     top: 35vh;
+//     z-index: 900;
+// }
 
-.gradientOne {
-    background-color: rgba(222, 73, 109, .7);
-}
+// .gradientOne {
+//     background-color: rgba(222, 73, 109, .7);
+// }
 
-.gradientTwo {
-    background-color: rgba(255, 174, 39, .7);
-}
+// .gradientTwo {
+//     background-color: rgba(255, 174, 39, .7);
+// }
 
-.gradientThree {
-    background-color: rgba(73, 221, 216, .7);
-}
+// .gradientThree {
+//     background-color: rgba(73, 221, 216, .7);
+// }
 
-.gradientFour {
-    background-color: rgba(171, 73, 222, .7);
-}
+// .gradientFour {
+//     background-color: rgba(171, 73, 222, .7);
+// }
 
-.aside-gradient-btn {
-    width: 35px;
-    height: 35px;
-    border: 1px solid $white;
-    border-radius: 50%;
-    margin: 5px;
+// .aside-gradient-btn {
+//     width: 35px;
+//     height: 35px;
+//     border: 1px solid $white;
+//     border-radius: 50%;
+//     margin: 5px;
 
-    &:focus {
-      display: none;
-    }
+//     &:focus {
+//       display: none;
+//     }
 
-    &:hover {
-        cursor: pointer;
-    }
-}
+//     &:hover {
+//         cursor: pointer;
+//     }
+// }
 
 .navigation {
     width: 100%;
@@ -96,16 +96,20 @@
 
 .on-scroll-color {
     transition: 0.6s all linear;
-    background-color: rgba($black, 0.5);
+    background-color: rgba($black, 0.9);
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 999;
     display: fixed;
     justify-content: center;
-    padding-bottom: 0px;
-    margin-top: 0px;
+    padding-bottom: 0;
+    margin-top: 0;
     height: 60px;
+
+    .container .menu-item>a {
+        color: $white;
+    }
 }
 
 .navigation-container {
@@ -114,23 +118,37 @@
 }
 
 .logo {
-  font-size: $font-size-m;
-  color: $black;
-  font-weight: 700;
-  font-family: $code;
-  border: 2px solid darkslateblue;
-  border-radius: 20px;
-  background-color: transparent;
+    font-size: $font-size-m;
+    color: $black;
+    font-weight: 700;
+    font-family: $code;
+    border: 2px solid darkslateblue;
+    border-radius: 20px;
+    background-color: transparent;
+    margin-left: 0;
+}
+
+.logo-on-scroll {
+    font-size: $font-size-m;
+    color: $white;
+    font-weight: 700;
+    font-family: $code;
+    border: 2px solid grey;
+    border-radius: 20px;
+    background-color: transparent;
+    margin-left: 0;
+    padding-top: 5px;
 }
 
 .menu {
     display: flex;
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 .menu-item {
     list-style-type: none;
     z-index: 999;
+    // text-align: center;
 
     a {
         padding-left: 30px;
@@ -142,6 +160,8 @@
         line-height: 60px;
         letter-spacing: 1.5px;
         transition: .4s;
+        // display: inline-block;
+        // width: 100vw;
 
         &:hover {
             cursor: pointer;

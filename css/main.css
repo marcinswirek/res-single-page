@@ -14,15 +14,9 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|PT+Sans|Quicksand:300,400,700|Merriweather|Roboto+Slab|Source+Code+Pro");
 @import url("https://fonts.googleapis.com/css?family=Montserrat|PT+Sans|Quicksand:300,400,700|Merriweather|Roboto+Slab|Source+Code+Pro");
 @import url("https://fonts.googleapis.com/css?family=Montserrat|PT+Sans|Quicksand:300,400,700|Merriweather|Roboto+Slab|Source+Code+Pro");
-* { box-sizing: border-box; margin: 0 auto; }
+* { box-sizing: border-box; border: 0.1px solid red; margin: 0 auto; }
 
-.body-one { margin: 0 auto; padding: 0; font-family: "Quicksand", "Montserrat", "Merriweather", "Arial", sans-serif, sans-serif; font-weight: 300; background-image: linear-gradient(135deg, #ab49de 0%, #4954de 100%); background-size: cover; color: white; background-repeat: no-repeat; transition: background-image 2s; }
-
-.body-two { margin: 0 auto; padding: 0; font-family: "Quicksand", "Montserrat", "Merriweather", "Arial", sans-serif, sans-serif; font-weight: 300; background-image: linear-gradient(135deg, #ffae27 0%, #de496d 100%); background-size: cover; color: white; background-repeat: no-repeat; transition: background-image 2s; }
-
-.body-three { margin: 0 auto; padding: 0; font-family: "Quicksand", "Montserrat", "Merriweather", "Arial", sans-serif, sans-serif; font-weight: 300; background-image: linear-gradient(-45deg, #49ddd8 0%, #19e273 100%); background-size: cover; color: white; background-repeat: no-repeat; transition: background-image 2s; }
-
-.body-four { margin: 0 auto; padding: 0; font-family: "Quicksand", "Montserrat", "Merriweather", "Arial", sans-serif, sans-serif; font-weight: 300; background-image: linear-gradient(-45deg, #de496d 0%, #ab49de 100%); background-size: cover; color: white; background-repeat: no-repeat; transition: background-image 2s; }
+body { margin: 0 auto; padding: 0; font-family: "Quicksand", "Montserrat", "Merriweather", "Arial", sans-serif, sans-serif; font-weight: 300; background-image: linear-gradient(135deg, #ffae27 0%, #de496d 100%); background-size: cover; color: white; background-repeat: no-repeat; transition: background-image 2s; }
 
 .header { padding-top: 20vh; padding-bottom: 60px; text-align: center; font-size: 30px; }
 
@@ -34,39 +28,27 @@
 
 .aside-social-container { position: fixed; left: -25px; top: 36vh; list-style-type: none; z-index: 998; }
 
-.aside-social-link { color: black; }
+.aside-social-link { color: white; }
 
 .aside-social-item { padding: 10px 20px; font-size: 30px; z-index: 998; }
 
 .aside-social-item i { transition: .4s; }
 
-.aside-social-item i:hover { color: white; }
-
-.aside-background-colors { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; position: fixed; right: 0; top: 35vh; z-index: 900; }
-
-.gradientOne { background-color: rgba(222, 73, 109, 0.7); }
-
-.gradientTwo { background-color: rgba(255, 174, 39, 0.7); }
-
-.gradientThree { background-color: rgba(73, 221, 216, 0.7); }
-
-.gradientFour { background-color: rgba(171, 73, 222, 0.7); }
-
-.aside-gradient-btn { width: 35px; height: 35px; border: 1px solid white; border-radius: 50%; margin: 5px; }
-
-.aside-gradient-btn:focus { display: none; }
-
-.aside-gradient-btn:hover { cursor: pointer; }
+.aside-social-item i:hover { color: black; }
 
 .navigation { width: 100%; height: 60px; position: fixed; top: 0; left: 0; transition: .6s all linear; }
 
-.on-scroll-color { transition: 0.6s all linear; background-color: rgba(0, 0, 0, 0.5); position: fixed; top: 0; width: 100%; z-index: 999; display: fixed; -ms-flex-pack: center; justify-content: center; padding-bottom: 0px; margin-top: 0px; height: 60px; }
+.on-scroll-color { transition: 0.6s all linear; background-color: rgba(0, 0, 0, 0.9); position: fixed; top: 0; width: 100%; z-index: 999; display: fixed; -ms-flex-pack: center; justify-content: center; padding-bottom: 0; margin-top: 0; height: 60px; }
+
+.on-scroll-color .container .menu-item > a { color: white; }
 
 .navigation-container { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; }
 
-.logo { font-size: 18px; color: black; font-weight: 700; font-family: "Source Code Pro", "Roboto Slab", "Merriweather", "Arial", sans-serif; border: 2px solid darkslateblue; border-radius: 20px; background-color: transparent; }
+.logo { font-size: 18px; color: black; font-weight: 700; font-family: "Source Code Pro", "Roboto Slab", "Merriweather", "Arial", sans-serif; border: 2px solid darkslateblue; border-radius: 20px; background-color: transparent; margin-left: 0; }
 
-.menu { display: -ms-flexbox; display: flex; margin-right: 0px; }
+.logo-on-scroll { font-size: 18px; color: white; font-weight: 700; font-family: "Source Code Pro", "Roboto Slab", "Merriweather", "Arial", sans-serif; border: 2px solid grey; border-radius: 20px; background-color: transparent; margin-left: 0; padding-top: 5px; }
+
+.menu { display: -ms-flexbox; display: flex; margin-right: 0; }
 
 .menu-item { list-style-type: none; z-index: 999; }
 
@@ -78,9 +60,9 @@ header { height: 80vh; }
 
 .header-container { margin-top: 0px; text-align: center; vertical-align: center; padding-top: 16vh; }
 
-.header-btn { width: 180px; height: 60px; border: 1px solid white; border-radius: 5px; background-color: transparent; color: white; font-size: 12px; font-weight: 300; letter-spacing: 1.5px; position: relative; bottom: -5vw; opacity: 0; transition: 1s; }
+.header-btn { width: 180px; height: 60px; border: 1px solid white; border-radius: 5px; background-color: transparent; color: white; font-size: 12px; font-weight: 300; letter-spacing: 1.5px; position: relative; bottom: -5vw; opacity: 0; cursor: pointer; transition: .3s all linear; }
 
-.header-btn:hover { cursor: pointer; background-image: linear-gradient(-45deg, #de496d 0%, #ab49de 100%); }
+.header-btn:hover { transform: scale(1.05); }
 
 .text-container { font-family: "Quicksand", "Montserrat", "Merriweather", "Arial", sans-serif; }
 
@@ -141,13 +123,13 @@ header { height: 80vh; }
 
 .portfolio-btn-container { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; margin: 20px auto; }
 
-.portfolio-item-btn { height: 40px; width: 120px; border: 1px solid white; background-color: transparent; border-radius: 5px; color: white; font-size: 30px; }
+.portfolio-item-btn { height: 40px; width: 120px; border: 1px solid white; background-color: transparent; border-radius: 5px; color: white; font-size: 30px; transition: .3s all linear; }
 
-.portfolio-item-btn:hover { cursor: pointer; background-image: linear-gradient(-45deg, #de496d 0%, #ab49de 100%); }
+.portfolio-item-btn:hover { cursor: pointer; transform: scale(1.05); }
 
-.portfolio-btn { margin-top: 40px; width: 180px; height: 60px; border: 1px solid white; border-radius: 5px; background-color: transparent; color: white; font-size: 12px; font-weight: 300; letter-spacing: 1.5px; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; padding-left: 25px; }
+.portfolio-btn { margin-top: 40px; width: 180px; height: 60px; border: 1px solid white; border-radius: 5px; background-color: transparent; color: white; font-size: 12px; font-weight: 300; letter-spacing: 1.5px; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; padding-left: 25px; transition: .3s all linear; }
 
-.portfolio-btn:hover { cursor: pointer; background-image: linear-gradient(-45deg, #de496d 0%, #ab49de 100%); }
+.portfolio-btn:hover { cursor: pointer; transform: scale(1.05); }
 
 .portfolio-btn-icon { font-size: 30px; }
 
@@ -167,13 +149,13 @@ header { height: 80vh; }
 
 .contact { height: 100vh; }
 
-.contact-container { display: -ms-flexbox; display: flex; margin-top: 100px; }
+.contact-container { display: -ms-flexbox; display: flex; margin-top: 100px; -ms-flex-pack: center; justify-content: center; }
 
 .contact-link { text-decoration: none; color: rgba(0, 0, 0, 0.6); transition: .5s; }
 
 .contact-link:hover { color: black; }
 
-.contact-icon { font-size: 140px; background-color: linear-gradient(-45deg, #49ddd8 0%, #19e273 100%); }
+.contact-icon { font-size: 140px; }
 
 .about { height: 100vh; }
 
@@ -202,10 +184,10 @@ footer { background-color: #2B4151; }
   .about-header { padding-top: 20vh; }
   .contact-container { margin: 80px auto; } }
 
-@media all and (max-width: 1050px) { .navigation-container { padding-top: 5px; display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: justify; justify-content: space-between; display: flex; -ms-flex-direction: column; flex-direction: column; }
-  .navigation { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; margin: auto; }
-  .logo { margin-top: 10px; margin-left: 10px; }
-  .menu-button-label { display: block; margin: 0 auto; padding: 3px 10px; color: white; margin-right: 25px; margin-top: -40px; }
+@media all and (max-width: 1050px) { .navigation-container { padding-top: 10px; display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; display: flex; -ms-flex-direction: column; flex-direction: column; }
+  .navigation { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; margin: auto; background-color: rgba(0, 0, 0, 0.9); }
+  .logo { margin-top: 10px; margin-left: 10px; color: white; border: 2px solid grey; }
+  .menu-button-label { display: block; margin: 0 auto; padding: 3px 10px; color: white; margin-right: 10px; margin-top: -45px; }
   .menu-button-input:not(:checked) ~ ul { display: none; }
   .menu-button-input:checked ~ ul { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; }
   .menu-item { background-color: rgba(0, 0, 0, 0.95); display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; width: 100vw; line-height: 44px; margin: auto; -ms-flex-align: center; align-items: center; }

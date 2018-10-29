@@ -10,6 +10,7 @@
 .contact-container {
   display: flex;
   margin-top: 100px;
+  justify-content: center;
 }
 
 .contact-link {
@@ -24,5 +25,4 @@
 
 .contact-icon {
   font-size: $font-size-xxxl;
-  background-color: $gradient-3;
 }

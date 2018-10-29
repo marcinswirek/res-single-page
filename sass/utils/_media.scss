@@ -53,10 +53,11 @@
     //Hamburger menu
 
     .navigation-container {
-        padding-top: 5px;
+        padding-top: 10px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         display: flex;
         flex-direction: column;
     }
@@ -65,11 +66,14 @@
         display: flex;
         flex-direction: column;
         margin: auto;
+        background-color: rgba($black, 0.9);
     }
 
     .logo {
         margin-top: 10px;
         margin-left: 10px;
+        color: $white;
+        border: 2px solid grey;
     }
 
     .menu-button-label {
@@ -77,8 +81,8 @@
         margin: 0 auto;
         padding: 3px 10px;
         color: $white;
-        margin-right: 25px;
-        margin-top: -40px;
+        margin-right: 10px;
+        margin-top: -45px;
     }
 
     .menu-button-input:not(:checked)~ul {

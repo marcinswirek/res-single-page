@@ -4,22 +4,22 @@
 @import '../variables/typography';
 
 @mixin btn-main {
-  width: 180px;
-  height: 60px;
-  border: 1px solid $white;
-  border-radius: 5px;
-  background-color: transparent;
-  color: $white;
-  font-size: $font-size-xs;
-  font-weight: 300;
-  letter-spacing: 1.5px;
-  position: relative;
-  bottom: -5vw;
-  opacity: 0;
-  transition: 1s;
+    width: 180px;
+    height: 60px;
+    border: 1px solid $white;
+    border-radius: 5px;
+    background-color: transparent;
+    color: $white;
+    font-size: $font-size-xs;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    position: relative;
+    bottom: -5vw;
+    opacity: 0;
+    cursor: pointer;
+    transition: .3s all linear;
 
-  &:hover {
-      cursor: pointer;
-      background-image: $gradient-4;
-  }
+    &:hover {
+      transform: scale(1.05);
+    }
 }

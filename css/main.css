@@ -61,7 +61,7 @@ header { height: 80vh; }
 
 .header-container { margin-top: 0; text-align: center; vertical-align: center; padding-top: 16vh; }
 
-.header-btn-link { margin-top: 40px; display: inline-block; line-height: 60px; font-size: 12px; padding-left: 25px; padding-right: 25px; color: white; border: 1px solid white; border-radius: 5px; text-decoration: none; font-weight: 300; letter-spacing: 1.5px; transition: .2s all linear; cursor: pointer; }
+.header-btn-link { margin-top: 40px; display: inline-block; line-height: 60px; font-size: 12px; padding-left: 25px; padding-right: 25px; color: white; border: 1px solid white; border-radius: 5px; text-decoration: none; font-weight: 300; letter-spacing: 1.5px; transition: .2s all linear; opacity: 0; cursor: pointer; }
 
 .header-btn-link:hover { transform: scale(1.05); }
 
@@ -132,7 +132,7 @@ header { height: 80vh; }
 
 .portfolio-container { text-align: center; }
 
-.portfolio-item-img { background-position: center; background-size: cover; background-repeat: no-repeat; border-radius: 3px; padding: 240px 140px; -webkit-filter: grayscale(100%); filter: grayscale(100%); opacity: .6; }
+.portfolio-item-img { background-position: center; background-size: cover; background-repeat: no-repeat; border-radius: 3px; padding: 240px 140px; -webkit-filter: grayscale(100%); filter: grayscale(100%); opacity: .8; }
 
 .portfolio-item-img-1 { background-image: url("../images/golden.jpg"); }
 

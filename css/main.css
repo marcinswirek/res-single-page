@@ -142,7 +142,9 @@ header { height: 80vh; }
 
 .portfolio-item-img-4 { background-image: url("../images/pies.jpg"); }
 
-.portfolio-item-paragraph { color: white; text-decoration: none; width: 90%; margin-top: 20px; }
+.portfolio-item-paragraph { color: white; text-decoration: none; width: 90%; margin-top: 20px; line-height: 30px; }
+
+.portfolio-span { font-weight: 700; }
 
 .contact { height: 100vh; }
 

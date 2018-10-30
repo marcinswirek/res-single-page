@@ -1,6 +1,5 @@
 @import "../variables/colors";
 @import "../variables/typography";
-@import "../elements/buttons";
 
 //====================================================================================
 // RWD
@@ -10,19 +9,15 @@
 // Max 1200px
 @media all and (max-width: 1200px) {
 
-    .portfolio,
     .skills,
     .contact {
         height: 100%;
     }
 
     .portfolio-grid {
-        grid-template-columns: 35% 35%;
-        grid-gap: 20px;
-    }
-
-    .portfolio-item-paragraph {
-        margin-top: 200px;
+        grid-template-columns: auto auto;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .about-img {
@@ -46,7 +41,7 @@
         margin: 80px auto;
     }
 }
-
+//=================================================================================
 // Max 1050px
 
 @media all and (max-width: 1050px) {
@@ -70,7 +65,6 @@
     }
 
     .logo {
-        margin-top: 10px;
         margin-left: 10px;
         color: $white;
         border: 2px solid grey;
@@ -154,16 +148,12 @@
         padding-left: 30px;
     }
 }
-
+//==============================================================
 //Max 800px
 @media all and (max-width: 800px) {
 
     .portfolio-grid {
-        grid-template-columns: 60vw;
-    }
-
-    .portfolio-item-paragraph {
-      margin-top: 200px;
+        grid-template-columns: auto;
     }
 }
 
@@ -173,14 +163,6 @@
 @media all and (max-width: 550px) {
     .skills-grid {
         grid-template-columns: auto auto;
-    }
-
-    .portfolio-grid {
-        grid-template-columns: 75vw;
-    }
-
-    .portfolio-item-paragraph {
-        margin-top: 40%;
     }
 
     .header {
@@ -202,22 +184,18 @@
 // Max 450px
 
 @media all and (max-width: 450px) {
-    
+
     #typedText {
-      margin-top: 0px;
-      font-size: $font-size-l;
+        margin-top: 0;
+        font-size: $font-size-l;
     }
 
     .skills-container {
         grid-template-columns: auto auto;
     }
 
-    .portfolio-container {
-        grid-template-columns: auto;
-    }
-
-    .portfolio-item-paragraph {
-      margin-top: 60%;
+    .portfolio-item-img {
+      padding: 140px 140px;
     }
 
     .contact-icon {
@@ -251,9 +229,5 @@
 
     .portfolio-item-btn {
         width: 100px;
-    }
-
-    .portfolio-item-paragraph {
-      margin-top: 190px;
     }
 }

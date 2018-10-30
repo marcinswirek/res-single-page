@@ -2,21 +2,37 @@
 
 @import '../variables/colors';
 @import '../variables/typography';
-@import '../elements/buttons';
 
 header {
     height: 80vh;
 }
 
 .header-container {
-    margin-top: 0px;
+    margin-top: 0;
     text-align: center;
     vertical-align: center;
     padding-top: 16vh;
 }
 
-.header-btn {
-    @include btn-main;
+.header-btn-link {
+    margin-top: 40px;
+    display: inline-block;
+    line-height: 60px;
+    font-size: $font-size-xs;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: $white;
+    border: 1px solid $white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    transition: .2s all linear;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 }
 
 .text-container {

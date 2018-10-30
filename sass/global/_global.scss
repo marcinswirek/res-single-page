@@ -1,10 +1,9 @@
 @import '../variables/colors';
 @import '../variables/typography';
-@import '../elements/buttons';
 
 * {
     box-sizing: border-box;
-    border: 0.1px solid red;
+    //border: 0.1px solid red;
     margin: 0 auto;
 }
 
@@ -20,42 +19,6 @@ body {
     transition: background-image 2s;
 }
 
-// .body-two {
-//     margin: 0 auto;
-//     padding: 0;
-//     font-family: $quicksand, sans-serif;
-//     font-weight: 300;
-//     background-image: $gradient-2;
-//     background-size: cover;
-//     color: $white;
-//     background-repeat: no-repeat;
-//     transition: background-image 2s;
-// }
-
-// .body-three {
-//     margin: 0 auto;
-//     padding: 0;
-//     font-family: $quicksand, sans-serif;
-//     font-weight: 300;
-//     background-image: $gradient-3;
-//     background-size: cover;
-//     color: $white;
-//     background-repeat: no-repeat;
-//     transition: background-image 2s;
-// }
-
-// .body-four {
-//     margin: 0 auto;
-//     padding: 0;
-//     font-family: $quicksand, sans-serif;
-//     font-weight: 300;
-//     background-image: $gradient-4;
-//     background-size: cover;
-//     color: $white;
-//     background-repeat: no-repeat;
-//     transition: background-image 2s;
-// }
-
 .header {
     padding-top: 20vh;
     padding-bottom: 60px;
@@ -67,3 +30,4 @@ body {
     width: 1200px;
     max-width: 100%;
 }
+

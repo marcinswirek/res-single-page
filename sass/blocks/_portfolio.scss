@@ -3,61 +3,57 @@
 @import "../variables/colors";
 @import "../variables/typography";
 
-.portfolio {
-  height: 100vh;
-}
+// .portfolio {
+//   height: 100vh;
+// }
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: 23% 23% 23% 23%;
-    gap: 2%;
+    grid-template-columns: auto auto;
+    gap: 0px;
     justify-content: center;
 }
 
 .portfolio-item {
-    border: 1px solid $white;
-    border-radius: 5px;
+    //border: 1px solid $white;
+    //border-radius: 5px;
     transition: 0.3s all linear;
     position: relative;
-
-    &:hover {
-        box-shadow: 0 0 20px $black;
-    }
 }
 
 .portfolio-btn-container {
-  display: flex;
-  align-items: center;
-  margin: 20px auto;
-  // position: absolute;
-  // bottom: 10px;
+    display: flex;
+    align-items: center;
+    margin: 20px auto 80px auto;
+    // position: absolute;
+    // bottom: 10px;
 }
 
 .portfolio-item-btn {
-  height: 40px;
-  width: 120px;
-  border: 1px solid $white;
-  background-color: transparent;
-  border-radius: 5px;
-  color: $white;
-  font-size: $font-size-l;
-  transition: .3s all linear;
+    height: 40px;
+    width: 120px;
+    border: 1px solid $white;
+    background-color: transparent;
+    border-radius: 5px;
+    color: $white;
+    font-size: $font-size-l;
+    transition: .3s all linear;
 
-  &:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-  }
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+    }
 }
 
 .portfolio-btn {
-    margin-top: 40px;
+    margin-bottom: 60px;
     width: 180px;
     height: 60px;
     border: 1px solid $white;
     border-radius: 5px;
     background-color: transparent;
     color: $white;
-    font-size: $font-size-xs;
+    font-size: $font-size-s;
     font-weight: 300;
     letter-spacing: 1.5px;
     display: flex;
@@ -72,7 +68,7 @@
 }
 
 .portfolio-btn-icon {
-  font-size: $font-size-l;
+    font-size: $font-size-l;
 }
 
 .portfolio-container {
@@ -80,38 +76,34 @@
 }
 
 .portfolio-item-img {
-    height: 40%;
-    width: 90%;
-    background-image: url('../images/puzzle.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 3px;
-    position: absolute;
-    top: 3%;
-    left: 5%;
+    padding: 240px 140px;
+    filter: grayscale(100%);
+    opacity: .6;
 }
 
 .portfolio-item-img-1 {
-  background-image: url('../images/golden.jpg');
+    background-image: url('../images/golden.jpg');
 }
 
 .portfolio-item-img-2 {
-  background-image: url('../images/puzzle.jpg');
+    background-image: url('../images/puzzle.jpg');
 }
 
 .portfolio-item-img-3 {
-  background-image: url('../images/plans.jpg');
+    background-image: url('../images/plans.jpg');
 }
 
 .portfolio-item-img-4 {
-  background-image: url('../images/pies.jpg');
+    background-image: url('../images/pies.jpg');
 }
 
 .portfolio-item-paragraph {
     color: $white;
     text-decoration: none;
     width: 90%;
-    margin-top: 65%;
-    text-align: justify;
+    margin-top: 20px;
 }

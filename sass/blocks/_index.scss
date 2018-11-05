@@ -8,17 +8,18 @@ header {
 }
 
 .header-container {
-    margin-top: 0;
     text-align: center;
-    vertical-align: center;
-    padding-top: 16vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .header-btn-link {
     margin-top: 40px;
     display: inline-block;
     line-height: 60px;
-    font-size: $font-size-xs;
+    font-size: $font-size-s;
     padding-left: 25px;
     padding-right: 25px;
     color: $white;

@@ -40,21 +40,21 @@
 }
 
 .aside-linkedin-icon {
-  &:hover {
-    color: $linkedin;
-  }
+    &:hover {
+        color: $linkedin;
+    }
 }
 
 .aside-facebook-icon {
-  &:hover {
-    color: $facebook;
-  }
+    &:hover {
+        color: $facebook;
+    }
 }
 
 .aside-github-icon {
-  &:hover {
-    color: $black;
-  }
+    &:hover {
+        color: $black;
+    }
 }
 
 .navigation {
@@ -64,6 +64,7 @@
     top: 0;
     left: 0;
     transition: .6s all linear;
+    z-index: 998;
 }
 
 .on-scroll-color {
@@ -81,10 +82,6 @@
 
     .container .menu-item>a {
         color: $white;
-
-        &:hover {
-          color: $darkgray;
-        }
     }
 }
 
@@ -95,13 +92,13 @@
 
 .logo {
     font-size: $font-size-m;
-    color: $black;
+    color: $white;
     font-weight: 700;
     font-family: $code;
-    border: 2px solid darkslateblue;
+    border: 2px solid grey;
     border-radius: 20px;
     background-color: transparent;
-    margin-left: 0;
+    margin-left: 10px;
 }
 
 .logo-on-scroll {
@@ -120,14 +117,15 @@
     margin-right: 0;
 }
 
+
 .menu-item {
     list-style-type: none;
     z-index: 999;
 
     a {
-        padding-left: 30px;
+        padding: 15px 15px;
         text-decoration: none;
-        color: $black;
+        color: $white;
         font-size: $font-size-xs;
         text-transform: uppercase;
         font-weight: 700;
@@ -138,6 +136,32 @@
         &:hover {
             cursor: pointer;
             color: $white;
+        }
+
+        &:hover::after {
+          opacity: 1;
+          transform: translateX(6px);
+        }
+
+        &:hover::before {
+          opacity: 1;
+          transform: translateX(-6px);
+        }
+
+        &::before {
+            content: '[';
+            display: inline-block;
+            color: white;
+            opacity: 0;
+            transition: .1s all linear;
+        }
+
+        &::after {
+            content: ']';
+            display: inline-block;
+            color: white;
+            opacity: 0;
+            transition: .1s all linear;
         }
     }
 }

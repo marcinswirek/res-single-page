@@ -116,7 +116,7 @@ header { height: 80vh; }
 
 .portfolio-grid { display: -ms-grid; display: grid; -ms-grid-columns: auto auto; grid-template-columns: auto auto; gap: 0px; -ms-flex-pack: center; justify-content: center; }
 
-.portfolio-item { transition: 0.3s all linear; position: relative; }
+.portfolio-item { transition: 0.3s all linear; position: relative; padding: 10px; }
 
 .portfolio-btn-container { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; margin: 20px auto 80px auto; }
 

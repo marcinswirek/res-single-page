@@ -234,32 +234,48 @@
         </div>
     </section> -->
 
-    <footer>
+    <footer id="contact">
         <div class="container">
-            <h1 class="footer-header header">Pozostańmy w kontakcie</h1>
+            <h1 class="footer-header header">Jeśli masz jakieś pytania, czekam na kontakt</h1>
             <div class="form-container">
-                <form id="contact-form">
+                <form class="contact-form" action="https://formspree.io/swirek.marcin@gmail.com" method="POST">
                     <div class="footer-personal-info">
                         <div class="footer-input">
-                            <!-- <label for="inputName">Name</label> -->
-                            <input class="form__input personal-input" id="inputName" type="text" placeholder="Name"
+                            <input class="personal-input" type="text" placeholder="Twoje imię"
                                 name="name" />
                         </div>
                         <div class="footer-input">
-                            <!-- <label for="inputEmail">Email</label> -->
-                            <input class="form__input personal-input" id="inputEmail" type="email" placeholder="Email"
-                                name="email" />
+                            <input class="personal-input" type="email" placeholder="Twój email"
+                                name="_replyto" />
                         </div>
                     </div>
                     <div class="footer-input-msg">
-                        <!-- <label for="inputMessage">Message</label> -->
-                        <textarea class="msg-input" id="inputMessage" rows="3" placeholder="Your Message" name="message"></textarea>
-                        <input class="display-none" type="text" name="_gotcha" />
+                        <textarea class="msg-input" placeholder="Twoja wiadomość" name="message"></textarea>
                         <input class="footer-msg-btn" id="email-submit-btn" type="submit" value="Wyślij" />
                     </div>
                 </form>
             </div>
-            <p class="footer-paragraph">&copy; Marcin Świrek 2018</p>
+            <!-- <p class="footer-paragraph">&copy; Marcin Świrek 2018</p> -->
+            <div class="footer-social">
+                <p class="footer-paragraph">&copy; Marcin Świrek 2018</p>
+                <ul class="footer-social-container">
+                    <li class="footer-social-item">
+                        <a href="https://www.facebook.com/marcin.swirek" class="footer-social-link" target="blank">
+                            <i class="fab fa-facebook-f footer-social-icon footer-facebook-icon"></i>
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a href="https://www.linkedin.com/in/marcin-%C5%9Bwirek-a92a6a156/" class="footer-social-link" target="blank">
+                            <i class="fab fa-linkedin-in footer-social-icon footer-linkedin-icon"></i>
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a href="https://github.com/swirek-marcin" class="footer-social-link" target="blank">
+                            <i class="fab fa-github  footer-social-icon footer-github-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+              </div>        
         </div>
     </footer>
 

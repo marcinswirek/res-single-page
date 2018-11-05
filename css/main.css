@@ -204,9 +204,9 @@ form { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap
 
 .msg-input, .personal-input { border-top: none; border-left: none; border-right: none; background-color: transparent; }
 
-.fill { position: relative; width: 200px; height: 50px; margin-top: 40px; border: 2px solid #878787; border-radius: 4px; background-color: transparent; color: #878787; }
+.footer-msg-btn { position: relative; width: 200px; height: 50px; margin-top: 40px; border: 2px solid #878787; border-radius: 4px; background-color: transparent; color: #878787; }
 
-.fill:hover { cursor: pointer; }
+.footer-msg-btn:hover { cursor: pointer; }
 
 .footer-paragraph { line-height: 50px; font-size: 12px; }
 

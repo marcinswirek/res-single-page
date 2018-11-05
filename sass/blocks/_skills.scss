@@ -6,6 +6,7 @@
 
 .skills {
   height: 100vh;
+  margin-bottom: 60px;
 }
 
 .skills-item {
@@ -21,7 +22,7 @@
 }
 
 .devicons-skills {
-    font-size: $font-size-xxl;
+    font-size: $font-size-xxxl;
     transition: 0.3s all linear;
     margin: auto;
     color: $white;
@@ -29,6 +30,10 @@
     &:hover {
         transform: scale(1.05);
     }
+}
+
+.skills-paragraph {
+  font-size: $font-size-m;
 }
 
 .html5-skills {

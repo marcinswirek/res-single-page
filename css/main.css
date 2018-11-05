@@ -59,17 +59,25 @@ body { margin: 0 auto; padding: 0; font-family: "Quicksand", "Montserrat", "Merr
 
 .menu-item a:hover::before { opacity: 1; transform: translateX(-6px); }
 
-.menu-item a::before { content: '['; display: inline-block; color: white; opacity: 0; transition: .1s all linear; }
+.menu-item a::before { content: '<'; display: inline-block; color: white; opacity: 0; transition: .1s all linear; }
 
-.menu-item a::after { content: ']'; display: inline-block; color: white; opacity: 0; transition: .1s all linear; }
+.menu-item a::after { content: '/>'; display: inline-block; color: white; opacity: 0; transition: .1s all linear; }
 
 header { height: 80vh; }
 
 .header-container { text-align: center; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
 
-.header-btn-link { margin-top: 40px; display: inline-block; line-height: 60px; font-size: 16px; padding-left: 25px; padding-right: 25px; color: white; border: 1px solid white; border-radius: 5px; text-decoration: none; font-weight: 300; letter-spacing: 1.5px; transition: .2s all linear; opacity: 0; cursor: pointer; }
+.header-btn-link { margin-top: 40px; display: inline-block; height: 60px; width: 300px; line-height: 60px; font-size: 16px; padding-left: 25px; padding-right: 25px; color: white; border: 1px solid white; border-radius: 2px; text-decoration: none; font-weight: 300; letter-spacing: 1.5px; transition: .2s all linear; opacity: 0; cursor: pointer; overflow: hidden; }
 
-.header-btn-link:hover { transform: scale(1.05); }
+.header-btn-link span { display: block; position: relative; top: 0; left: 0; transition: .2s all linear; }
+
+.header-btn-link:hover { border: 3px solid white; }
+
+.header-btn-link:hover span:first-of-type { top: -60px; }
+
+.header-btn-link:hover span:last-of-type { top: -65px; }
+
+.header-btn-link-icon { font-size: 18px; }
 
 .text-container { font-family: "Quicksand", "Montserrat", "Merriweather", "Arial", sans-serif; }
 
@@ -80,15 +88,17 @@ header { height: 80vh; }
 
 .devicons { font-family: 'devicons'; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; /* Better Font Rendering =========== */ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
-.skills { height: 100vh; }
+.skills { height: 100vh; margin-bottom: 60px; }
 
 .skills-item { text-align: center; }
 
 .skills-grid { padding: 20px; display: -ms-grid; display: grid; -ms-grid-columns: auto auto auto auto; grid-template-columns: auto auto auto auto; grid-gap: 35px 35px; height: 100%; }
 
-.devicons-skills { font-size: 75px; transition: 0.3s all linear; margin: auto; color: white; }
+.devicons-skills { font-size: 90px; transition: 0.3s all linear; margin: auto; color: white; }
 
 .devicons-skills:hover { transform: scale(1.05); }
+
+.skills-paragraph { font-size: 18px; }
 
 .html5-skills:hover { color: #FB4300; }
 
@@ -160,7 +170,7 @@ header { height: 80vh; }
 
 .contact-link:hover { color: black; }
 
-.contact-icon { font-size: 140px; }
+.contact-icon { font-size: 90px; }
 
 .about { height: 100vh; }
 

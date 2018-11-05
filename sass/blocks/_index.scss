@@ -18,23 +18,46 @@ header {
 .header-btn-link {
     margin-top: 40px;
     display: inline-block;
+    height: 60px;
+    width: 300px;
     line-height: 60px;
     font-size: $font-size-s;
     padding-left: 25px;
     padding-right: 25px;
     color: $white;
     border: 1px solid $white;
-    border-radius: 5px;
+    border-radius: 2px;
     text-decoration: none;
     font-weight: 300;
     letter-spacing: 1.5px;
     transition: .2s all linear;
     opacity: 0;
     cursor: pointer;
+    overflow: hidden;
+
+    span {
+      display: block;
+      position: relative;
+      top: 0;
+      left: 0;
+      transition: .2s all linear;
+    }
 
     &:hover {
-        transform: scale(1.05);
+      border: 3px solid $white;
     }
+
+    &:hover span:first-of-type {
+      top: -60px;
+    }
+
+    &:hover span:last-of-type {
+      top: -65px;
+    }
+}
+
+.header-btn-link-icon {
+  font-size: $font-size-m;
 }
 
 .text-container {

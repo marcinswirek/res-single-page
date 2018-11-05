@@ -149,7 +149,7 @@
         }
 
         &::before {
-            content: '[';
+            content: '<';
             display: inline-block;
             color: white;
             opacity: 0;
@@ -157,7 +157,7 @@
         }
 
         &::after {
-            content: ']';
+            content: '/>';
             display: inline-block;
             color: white;
             opacity: 0;

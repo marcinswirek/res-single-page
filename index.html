@@ -69,7 +69,8 @@
                 <div id="typedText" class="typed-text">
                 </div>
             </div>
-            <a href="#contact" class="header-btn-link header-btn" id="headerBtn"><span>Skontaktuj się ze mną</span><span><i class="far fa-envelope header-btn-link-icon"></i> Skontaktuj się ze mną</span>
+            <a href="#contact" class="header-btn-link header-btn" id="headerBtn"><span>Skontaktuj się ze mną</span><span><i
+                        class="far fa-envelope header-btn-link-icon"></i> Skontaktuj się ze mną</span>
             </a>
         </div>
     </header>
@@ -222,7 +223,7 @@
         </div>
     </section>
 
-    <section class="contact tabcontent" id="contact">
+    <!-- <section class="contact tabcontent" id="contact">
         <div class="container">
             <h1 class="contact-header header">Zapraszam do kontaktu</h1>
             <div class="contact-container">
@@ -231,10 +232,34 @@
                 <a href="https://www.linkedin.com/in/marcin-%C5%9Bwirek-a92a6a156/" class="contact-link"><i class="fab fa-linkedin-in contact-icon"></i></a>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <footer>
         <div class="container">
+            <h1 class="footer-header header">Pozostańmy w kontakcie</h1>
+            <div class="form-container">
+                <form id="contact-form">
+                    <div class="footer-personal-info">
+                        <div class="footer-input">
+                            <!-- <label for="inputName">Name</label> -->
+                            <input class="form__input personal-input" id="inputName" type="text" placeholder="Name"
+                                name="name" />
+                        </div>
+                        <div class="footer-input">
+                            <!-- <label for="inputEmail">Email</label> -->
+                            <input class="form__input personal-input" id="inputEmail" type="email" placeholder="Email"
+                                name="email" />
+                        </div>
+                    </div>
+                    <div class="footer-input-msg">
+                        <!-- <label for="inputMessage">Message</label> -->
+                        <textarea class="form__input msg-input" id="inputMessage" rows="3" placeholder="Your Message"
+                            name="message"></textarea>
+                        <input class="display-none" type="text" name="_gotcha" />
+                        <input class="btn--default fill" id="email-submit-btn" type="submit" value="Wyślij" />
+                    </div>
+                </form>
+            </div>
             <p class="footer-paragraph">&copy; Marcin Świrek 2018</p>
         </div>
     </footer>

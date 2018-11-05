@@ -43,9 +43,9 @@ body { margin: 0 auto; padding: 0; font-family: "Quicksand", "Montserrat", "Merr
 
 .navigation-container { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; }
 
-.logo { font-size: 18px; color: white; font-weight: 700; font-family: "Source Code Pro", "Roboto Slab", "Merriweather", "Arial", sans-serif; border: 2px solid grey; border-radius: 20px; background-color: transparent; margin-left: 10px; }
+.logo { font-size: 18px; color: white; font-weight: 700; font-family: "Source Code Pro", "Roboto Slab", "Merriweather", "Arial", sans-serif; border: 2px solid white; border-radius: 20px; background-color: transparent; margin-left: 10px; }
 
-.logo-on-scroll { font-size: 18px; color: white; font-weight: 700; font-family: "Source Code Pro", "Roboto Slab", "Merriweather", "Arial", sans-serif; border: 2px solid grey; border-radius: 20px; background-color: transparent; margin-left: 10px; }
+.logo-on-scroll { font-size: 18px; color: white; font-weight: 700; font-family: "Source Code Pro", "Roboto Slab", "Merriweather", "Arial", sans-serif; border: 2px solid white; border-radius: 20px; background-color: transparent; margin-left: 10px; }
 
 .menu { display: -ms-flexbox; display: flex; margin-right: 0; }
 

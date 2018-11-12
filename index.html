@@ -32,12 +32,12 @@
                 <input class="menu-button-input" type="checkbox" id="menu-button">
                 <label class="menu-button-label" for="menu-button">☰</label>
                 <ul class="menu">
-                    <li class="menu-item"><a class="menu-link tablinks" href="#start">Start</a></li>
-                    <li class="menu-item"><a class="menu-link tablinks" href="#about">O
+                    <li class="menu-item"><a class="start-nav" href="#">Start</a></li>
+                    <li class="menu-item"><a class="about-nav" href="#">O
                             mnie</a></li>
-                    <li class="menu-item"><a class="menu-link tablinks" href="#skills">Technologie</a></li>
-                    <li class="menu-item"><a class="menu-link tablinks" href="#portfolio">Portfolio</a></li>
-                    <li class="menu-item"><a class="menu-link tablinks" href="#contact">Kontakt</a></li>
+                    <li class="menu-item"><a class="skills-nav" href="#">Technologie</a></li>
+                    <li class="menu-item"><a class="portfolio-nav" href="#">Portfolio</a></li>
+                    <li class="menu-item"><a class="contact-nav" href="#">Kontakt</a></li>
                 </ul>
             </div>
         </div>
@@ -63,19 +63,19 @@
         </ul>
     </aside>
 
-    <header class="start tabcontent" id="start">
+    <header class="start" id="start-nav">
         <div class="container header-container">
             <div class="text-container">
                 <div id="typedText" class="typed-text">
                 </div>
             </div>
-            <a href="#contact" class="header-btn-link header-btn" id="headerBtn"><span>Skontaktuj się ze mną</span><span><i
+            <a href="#" class="header-btn-link header-btn" id="headerBtn"><span>Skontaktuj się ze mną</span><span><i
                         class="far fa-envelope header-btn-link-icon"></i> Skontaktuj się ze mną</span>
             </a>
         </div>
     </header>
 
-    <section class="about tabcontent" id="about">
+    <section class="about" id="about-nav">
         <div class="container">
             <h1 class="about-header header">O mnie</h1>
             <div class="about-container">
@@ -102,7 +102,7 @@
         </div>
     </section>
 
-    <section class="skills tabcontent" id="skills">
+    <section class="skills" id="skills-nav">
         <div class="container">
             <div class="skills-container">
                 <h1 class="skills-header header">
@@ -162,7 +162,7 @@
         </div>
     </section>
 
-    <section class="portfolio tabcontent" id="portfolio">
+    <section class="portfolio" id="portfolio-nav">
         <div class="container">
             <div class="portfolio-container">
                 <h1 class="portfolio-header header">Projekty</h1>
@@ -234,7 +234,7 @@
         </div>
     </section> -->
 
-    <footer id="contact">
+    <footer id="contact-nav">
         <div class="container">
             <h1 class="footer-header header">Jeśli masz jakieś pytania, czekam na kontakt</h1>
             <div class="form-container">
@@ -255,7 +255,6 @@
                     </div>
                 </form>
             </div>
-            <!-- <p class="footer-paragraph">&copy; Marcin Świrek 2018</p> -->
             <div class="footer-social">
                 <p class="footer-paragraph">&copy; Marcin Świrek 2018</p>
                 <ul class="footer-social-container">
@@ -282,14 +281,15 @@
 
 
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/alertify.min.js"></script>
     <script>
         window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')
-
     </script>
     <script src="js/plugins.js"></script>
     <script src="js/script.js"></script>

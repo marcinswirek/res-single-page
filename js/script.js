@@ -20,6 +20,15 @@ window.onscroll = function() {
     menuScroll();
 };
 
+//Smooth scroll in jQuery
+
+$('.menu li a').on('click', function() {
+  const clickMenu = '#' + $(this).attr('class');
+  $('body, html').animate({
+    scrollTop: $(clickMenu).offset().top
+  })
+})
+
 //Header button show function
 function showBtn() {
     setTimeout(function() {

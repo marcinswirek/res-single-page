@@ -29,6 +29,12 @@ $('.menu li a').on('click', function() {
   })
 })
 
+$('.header-btn-link').on('click', function() {
+  $('body, html').animate({
+    scrollTop: $('#contact-nav').offset().top
+  })
+})
+
 //Header button show function
 function showBtn() {
     setTimeout(function() {

@@ -6,7 +6,7 @@ input,
 textarea {
     font-family: $quicksand;
     //padding: 20px;
-    font-size: $font-size-l;
+    font-size: $font-size-m;
 }
 
 footer {
@@ -22,7 +22,7 @@ form {
 .footer-personal-info {
     display: flex;
     justify-content: space-between;
-    width: 75%;
+    width: 85%;
 }
 
 .footer-input {
@@ -43,7 +43,7 @@ form {
 }
 
 .msg-input {
-    width: 75%;
+    width: 85%;
     margin-top: 40px;
 }
 

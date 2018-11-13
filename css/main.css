@@ -186,13 +186,13 @@ header { height: 80vh; }
 
 .about-span { font-weight: 700; }
 
-input, textarea { font-family: "Quicksand", "Montserrat", "Merriweather", "Arial", sans-serif; font-size: 30px; }
+input, textarea { font-family: "Quicksand", "Montserrat", "Merriweather", "Arial", sans-serif; font-size: 18px; }
 
 footer { background-color: #323B42; color: #878787; }
 
 form { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
-.footer-personal-info { display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; width: 75%; }
+.footer-personal-info { display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; width: 85%; }
 
 .footer-input { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-positive: 1; flex-grow: 1; }
 
@@ -200,7 +200,7 @@ form { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap
 
 .personal-input { width: 95%; padding-top: 10px; }
 
-.msg-input { width: 75%; margin-top: 40px; }
+.msg-input { width: 85%; margin-top: 40px; }
 
 .msg-input, .personal-input { border-top: none; border-left: none; border-right: none; border-bottom: 1px solid #878787; background-color: transparent; height: 50px; }
 

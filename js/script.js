@@ -26,13 +26,13 @@ $('.menu li a').on('click', function() {
   const clickMenu = '#' + $(this).attr('class');
   $('body, html').animate({
     scrollTop: $(clickMenu).offset().top
-  })
+  }, 1000)
 })
 
 $('.header-btn-link').on('click', function() {
   $('body, html').animate({
     scrollTop: $('#contact-nav').offset().top
-  })
+  }, 1000)
 })
 
 //Header button show function

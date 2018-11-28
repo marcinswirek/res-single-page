@@ -87,7 +87,7 @@ function sectionAnimation() {
             aboutHeight +
             skillsHeight +
             portfolioHeight -
-            3.5 * windowHeight
+            3 * windowHeight
     ) {
         portfolioSection.classList.add('effectOn');
     } else {

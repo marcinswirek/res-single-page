@@ -9,7 +9,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|PT+Sans|Quicksand:300,400,700|Merriweather|Roboto+Slab|Source+Code+Pro");
 @import url("https://fonts.googleapis.com/css?family=Montserrat|PT+Sans|Quicksand:300,400,700|Merriweather|Roboto+Slab|Source+Code+Pro");
 @import url("https://fonts.googleapis.com/css?family=Montserrat|PT+Sans|Quicksand:300,400,700|Merriweather|Roboto+Slab|Source+Code+Pro");
-* { box-sizing: border-box; margin: 0 auto; }
+* { box-sizing: border-box; border: 0.1px solid red; margin: 0 auto; }
 
 body { margin: 0 auto; padding: 0; font-family: "Quicksand", "Montserrat", "Merriweather", "Arial", sans-serif, sans-serif; font-weight: 300; background-image: linear-gradient(135deg, #ffae27 0%, #de496d 100%); background-size: cover; color: white; background-repeat: no-repeat; transition: background-image 2s; overflow-x: hidden; }
 
@@ -134,7 +134,7 @@ header { height: 80vh; }
 
 .portfolio-grid { display: -ms-grid; display: grid; -ms-grid-columns: auto auto; grid-template-columns: auto auto; gap: 0px; -ms-flex-pack: center; justify-content: center; }
 
-.portfolio-item { transition: 0.3s all linear; position: relative; padding: 10px; }
+.portfolio-item { transition: 0.3s all linear; position: relative; padding: 10px; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; }
 
 .portfolio-btn-container { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; margin: 20px auto 80px auto; }
 
@@ -150,17 +150,11 @@ header { height: 80vh; }
 
 .portfolio-container { text-align: center; }
 
-.portfolio-item-img { background-position: center; background-size: cover; background-repeat: no-repeat; border-radius: 3px; padding: 240px 140px; -webkit-filter: grayscale(100%); filter: grayscale(100%); opacity: .8; }
+.portfolio-item-img { width: 80%; height: 40vh; }
 
-.portfolio-item-img-1 { background-image: url("../images/golden.jpg"); }
+.portfolio-item-img img { width: 100%; height: 100%; }
 
-.portfolio-item-img-2 { background-image: url("../images/puzzle.jpg"); }
-
-.portfolio-item-img-3 { background-image: url("../images/plans.jpg"); }
-
-.portfolio-item-img-4 { background-image: url("../images/pies.jpg"); }
-
-.portfolio-item-paragraph { color: white; text-decoration: none; width: 90%; margin-top: 20px; line-height: 30px; }
+.portfolio-item-paragraph { -ms-flex-positive: 1; flex-grow: 1; color: white; text-decoration: none; width: 90%; margin-top: 20px; line-height: 30px; }
 
 .portfolio-span { font-weight: 700; }
 
@@ -237,7 +231,9 @@ form { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap
   .menu { display: none; padding-left: 0; }
   #typed-text { font-size: 16px; }
   .about-header { padding-top: 20vh; }
-  .about { height: 100%; }
+  .about { height: 100%; top: 0; left: 0; }
+  .portfolio { top: 0; left: 0; }
+  .skills { top: 0; left: 0; }
   .about-container { -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; }
   .about-img-container { text-align: center; }
   .about-img { float: none; }
@@ -254,7 +250,8 @@ form { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap
   .footer-personal-info { width: 80%; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-positive: 1; flex-grow: 1; }
   .footer-social-container { -ms-flex-preferred-size: 40%; flex-basis: 40%; } }
 
-@media all and (max-width: 550px) { .skills-grid { -ms-grid-columns: auto auto; grid-template-columns: auto auto; }
+@media all and (max-width: 550px) { .portfolio-item-img { height: 20vh; }
+  .skills-grid { -ms-grid-columns: auto auto; grid-template-columns: auto auto; }
   .header { padding-left: 15px; padding-right: 15px; }
   .aside-background-colors { display: none; }
   .aside-social-container { left: -50px; }
@@ -266,7 +263,6 @@ form { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap
 
 @media all and (max-width: 450px) { #typedText { margin-top: 0; font-size: 30px; }
   .skills-container { -ms-grid-columns: auto auto; grid-template-columns: auto auto; }
-  .portfolio-item-img { padding: 140px 140px; }
   .contact-icon { font-size: 75px; } }
 
 @media all and (max-width: 320px) { #typedText { font-size: 30px; }

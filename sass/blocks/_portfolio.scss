@@ -4,10 +4,10 @@
 @import "../variables/typography";
 
 .portfolio {
-  transition: .5s all linear;
-  position: relative;
-  left: -100%;
-  top: 0;
+    transition: .5s all linear;
+    position: relative;
+    left: -100%;
+    top: 0;
 }
 
 .portfolio-grid {
@@ -21,6 +21,8 @@
     transition: 0.3s all linear;
     position: relative;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .portfolio-btn-container {
@@ -76,33 +78,48 @@
     text-align: center;
 }
 
+// .portfolio-item-img {
+//     background-position: center;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     border-radius: 3px;
+//     padding: 240px 140px;
+//     filter: grayscale(100%);
+//     opacity: .8;
+// }
+
 .portfolio-item-img {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 3px;
-    padding: 240px 140px;
-    filter: grayscale(100%);
-    opacity: .8;
+    width: 80%;
+    height: 40vh;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
-.portfolio-item-img-1 {
-    background-image: url('../images/golden.jpg');
-}
+// .portfolio-item-img-1 {
+//   width: 80%;
+//     background-image: url('../images/golden.jpg');
+// }
 
-.portfolio-item-img-2 {
-    background-image: url('../images/puzzle.jpg');
-}
+// .portfolio-item-img-2 {
+//   width: 80%;
+//     background-image: url('../images/puzzle.jpg');
+// }
 
-.portfolio-item-img-3 {
-    background-image: url('../images/plans.jpg');
-}
+// .portfolio-item-img-3 {
+//   width: 80%;
+//     background-image: url('../images/plans.jpg');
+// }
 
-.portfolio-item-img-4 {
-    background-image: url('../images/pies.jpg');
-}
+// .portfolio-item-img-4 {
+//   width: 80%;
+//     background-image: url('../images/pies.jpg');
+// }
 
 .portfolio-item-paragraph {
+    flex-grow: 1;
     color: $white;
     text-decoration: none;
     width: 90%;
@@ -111,5 +128,5 @@
 }
 
 .portfolio-span {
-  font-weight: 700;
+    font-weight: 700;
 }

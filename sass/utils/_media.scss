@@ -120,6 +120,18 @@
 
     .about {
         height: 100%;
+        top: 0; //JS
+        left: 0; //JS
+    }
+
+    .portfolio {
+        top: 0; //JS
+        left: 0; //JS
+    }
+
+    .skills {
+        top: 0;
+        left: 0;
     }
 
     .about-container {
@@ -168,12 +180,12 @@
     }
 
     .personal-input {
-      font-size: $font-size-m;
+        font-size: $font-size-m;
 
     }
 
     .footer-input {
-      margin-bottom: 30px;
+        margin-bottom: 30px;
     }
 
     .msg-input {
@@ -189,7 +201,7 @@
     }
 
     .footer-social-container {
-      flex-basis: 40%;
+        flex-basis: 40%;
     }
 }
 
@@ -197,6 +209,10 @@
 //Max 550px
 
 @media all and (max-width: 550px) {
+    .portfolio-item-img {
+        height: 20vh
+    }
+
     .skills-grid {
         grid-template-columns: auto auto;
     }
@@ -215,27 +231,27 @@
     }
 
     .footer-social {
-      flex-direction: column;
+        flex-direction: column;
     }
 
     .footer-social-container {
-      width: 100%;
-      margin: auto;
-      padding: 0;
-      order: -1;
-      
-      a {
-        font-size: $font-size-s;
-      }
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        order: -1;
+
+        a {
+            font-size: $font-size-s;
+        }
     }
 
     .msg-input {
-      width: 97%;
+        width: 97%;
     }
 
     .footer-paragraph {
-      margin: auto;
-      padding: 0;
+        margin: auto;
+        padding: 0;
     }
 }
 
@@ -255,7 +271,7 @@
     }
 
     .portfolio-item-img {
-        padding: 140px 140px;
+        //padding: 140px 140px;
     }
 
     .contact-icon {

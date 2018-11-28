@@ -5,6 +5,15 @@
 
 .about {
   height: 100vh;
+  transition: .5s all linear;
+  position: relative;
+  left: -100%;
+  top: 0;
+}
+
+.effectOn {
+  left: 0;
+  top: 0;
 }
 
 .about-container {

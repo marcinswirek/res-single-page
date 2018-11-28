@@ -7,6 +7,10 @@
 .skills {
   height: 100vh;
   margin-bottom: 60px;
+  transition: .5s all linear;
+  position: relative;
+  left: 100%;
+  top: 0;
 }
 
 .skills-item {

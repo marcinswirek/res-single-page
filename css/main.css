@@ -11,7 +11,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|PT+Sans|Quicksand:300,400,700|Merriweather|Roboto+Slab|Source+Code+Pro");
 * { box-sizing: border-box; margin: 0 auto; }
 
-body { margin: 0 auto; padding: 0; font-family: "Quicksand", "Montserrat", "Merriweather", "Arial", sans-serif, sans-serif; font-weight: 300; background-image: linear-gradient(135deg, #ffae27 0%, #de496d 100%); background-size: cover; color: white; background-repeat: no-repeat; transition: background-image 2s; }
+body { margin: 0 auto; padding: 0; font-family: "Quicksand", "Montserrat", "Merriweather", "Arial", sans-serif, sans-serif; font-weight: 300; background-image: linear-gradient(135deg, #ffae27 0%, #de496d 100%); background-size: cover; color: white; background-repeat: no-repeat; transition: background-image 2s; overflow-x: hidden; }
 
 .header { padding-top: 20vh; padding-bottom: 60px; text-align: center; font-size: 30px; }
 
@@ -88,7 +88,7 @@ header { height: 80vh; }
 
 .devicons { font-family: 'devicons'; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; /* Better Font Rendering =========== */ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
-.skills { height: 100vh; margin-bottom: 60px; }
+.skills { height: 100vh; margin-bottom: 60px; transition: .5s all linear; position: relative; left: 100%; top: 0; }
 
 .skills-item { text-align: center; }
 
@@ -130,6 +130,8 @@ header { height: 80vh; }
 
 .visualstudio-skills:hover { color: #007BCC; }
 
+.portfolio { transition: .5s all linear; position: relative; left: -100%; top: 0; }
+
 .portfolio-grid { display: -ms-grid; display: grid; -ms-grid-columns: auto auto; grid-template-columns: auto auto; gap: 0px; -ms-flex-pack: center; justify-content: center; }
 
 .portfolio-item { transition: 0.3s all linear; position: relative; padding: 10px; }
@@ -140,7 +142,7 @@ header { height: 80vh; }
 
 .portfolio-item-btn:hover { cursor: pointer; transform: scale(1.05); }
 
-.portfolio-btn { margin-bottom: 60px; width: 180px; height: 60px; border: 1px solid white; border-radius: 5px; background-color: transparent; color: white; font-size: 16px; font-weight: 300; letter-spacing: 1.5px; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; padding-left: 25px; transition: .3s all linear; }
+.portfolio-btn { margin-bottom: 60px; width: 180px; height: 60px; border: 1px solid white; border-radius: 5px; background-color: transparent; color: white; font-size: 16px; font-weight: 300; letter-spacing: 1.5px; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; padding-left: 25px; text-decoration: none; transition: .3s all linear; }
 
 .portfolio-btn:hover { cursor: pointer; transform: scale(1.05); }
 
@@ -162,8 +164,6 @@ header { height: 80vh; }
 
 .portfolio-span { font-weight: 700; }
 
-.contact { height: 100vh; }
-
 .contact-container { display: -ms-flexbox; display: flex; margin-top: 100px; -ms-flex-pack: center; justify-content: center; }
 
 .contact-link { text-decoration: none; color: rgba(0, 0, 0, 0.6); transition: .5s; }
@@ -172,7 +172,9 @@ header { height: 80vh; }
 
 .contact-icon { font-size: 140px; }
 
-.about { height: 100vh; }
+.about { height: 100vh; transition: .5s all linear; position: relative; left: -100%; top: 0; }
+
+.effectOn { left: 0; top: 0; }
 
 .about-container { display: -ms-flexbox; display: flex; }
 

@@ -3,6 +3,13 @@
 @import "../variables/colors";
 @import "../variables/typography";
 
+.portfolio {
+  transition: .5s all linear;
+  position: relative;
+  left: -100%;
+  top: 0;
+}
+
 .portfolio-grid {
     display: grid;
     grid-template-columns: auto auto;
@@ -52,6 +59,7 @@
     display: flex;
     align-items: center;
     padding-left: 25px;
+    text-decoration: none;
     transition: .3s all linear;
 
     &:hover {

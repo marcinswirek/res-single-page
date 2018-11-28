@@ -17,6 +17,7 @@ body {
     color: $white;
     background-repeat: no-repeat;
     transition: background-image 2s;
+    overflow-x: hidden;
 }
 
 .header {

@@ -101,6 +101,7 @@
 
         a {
             padding-left: 0;
+            padding-right: 0;
             color: $white;
         }
     }
@@ -130,8 +131,8 @@
     }
 
     .skills {
-        top: 0;
-        left: 0;
+        top: 0; //J S
+        left: 0; //JS
     }
 
     .about-container {
@@ -210,7 +211,8 @@
 
 @media all and (max-width: 550px) {
     .portfolio-item-img {
-        height: 20vh
+        height: 44vh;
+        width: 95%;
     }
 
     .skills-grid {
@@ -268,10 +270,6 @@
 
     .skills-container {
         grid-template-columns: auto auto;
-    }
-
-    .portfolio-item-img {
-        //padding: 140px 140px;
     }
 
     .contact-icon {
